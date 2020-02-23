@@ -30,7 +30,7 @@ const Jumbo = () => {
             <div className="overlay"></div>
             <Container>
                 <h1> Welcome...</h1>
-                <p> THis is what I have to offer as  junior dev...</p>
+                <p> This is what I have to offer as a junior dev...</p>
             </Container>
         </Jumbotron>
     </Styles>)
