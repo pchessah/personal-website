@@ -26,7 +26,7 @@ const NavigationBar = () => {
       <Navbar expand="lg">
         <Navbar.Brand>
           <Link className="page-links" to="/">
-            <h2>Chessah</h2>
+            <h2> Paul Chesa</h2>
           </Link>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -50,6 +50,13 @@ const NavigationBar = () => {
               <Nav.Link>
                 <Link className="page-links" to="/projects">
                   Projects
+                </Link>
+              </Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+              <Nav.Link>
+                <Link className="page-links" to="/contact">
+                  Contact Me
                 </Link>
               </Nav.Link>
             </Nav.Item>
