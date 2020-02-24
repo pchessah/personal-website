@@ -1,8 +1,13 @@
 import React from "react";
+import Jumbo from "./components/Jumbo";
+import Layout from "./components/Layout";
 
 function Profile() {
   return (
+    <div>
+      <Layout>
     <div className="w3-content w3-margin-top" style={{ maxWidth: "1400px" }}>
+       <Jumbo />
       <div className="w3-row-padding">
         <div className="w3-third">
           <div className="w3-white w3-text-grey w3-card-4">
@@ -231,6 +236,8 @@ function Profile() {
           </div>
         </div>
       </div>
+    </div>
+    </Layout>
     </div>
   );
 }

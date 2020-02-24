@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const Styles = styled.div`
   .navbar {
-    background-color: #229999;
+    background-color: #1E4E79;
   }
 
   a,
@@ -22,6 +22,7 @@ const Styles = styled.div`
 
 const NavigationBar = () => {
   return (
+    
     <Styles>
       <Navbar expand="lg">
         <Navbar.Brand>
