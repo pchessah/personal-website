@@ -1,10 +1,12 @@
 import React from "react";
 import Jumbo from "./components/Jumbo";
 import Layout from "./components/Layout";
+import NavigationBar from "./components/Navbar";
 
 function Profile() {
   return (
     <div>
+      <NavigationBar/>
       <Layout>
     <div className="w3-content w3-margin-top" style={{ maxWidth: "1400px" }}>
        <Jumbo />
@@ -19,7 +21,7 @@ function Profile() {
               />
             </div>
             <br />
-            <div className="w3-container">
+            <div className="w3-container" style={{marginLeft:"12px"}}>
               <p>
                 <i className="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>
                 Junior ICT Professional with proficiency in JavaScript and React

@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const Styles = styled.div`
   .navbar {
-    background-color: #1E4E79;
+    background-color: #1e4e79;
   }
 
   a,
@@ -22,7 +22,6 @@ const Styles = styled.div`
 
 const NavigationBar = () => {
   return (
-    
     <Styles>
       <Navbar expand="lg">
         <Navbar.Brand>
@@ -34,32 +33,24 @@ const NavigationBar = () => {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ml-auto">
             <Nav.Item>
-              <Nav.Link>
-                <Link className="page-links" to="/">
-                  Home
-                </Link>
-              </Nav.Link>
+              <Link className="page-links" to="/">
+                Home
+              </Link>
             </Nav.Item>
             <Nav.Item>
-              <Nav.Link>
-                <Link className="page-links" to="/profile">
-                  Profile
-                </Link>
-              </Nav.Link>
+              <Link className="page-links" to="/profile">
+                Profile
+              </Link>
             </Nav.Item>
             <Nav.Item>
-              <Nav.Link>
-                <Link className="page-links" to="/projects">
-                  Projects
-                </Link>
-              </Nav.Link>
+              <Link className="page-links" to="/projects">
+                Projects
+              </Link>
             </Nav.Item>
             <Nav.Item>
-              <Nav.Link>
-                <Link className="page-links" to="/contact">
-                  Contact Me
-                </Link>
-              </Nav.Link>
+              <Link className="page-links" to="/contact">
+                Contact Me
+              </Link>
             </Nav.Item>
           </Nav>
         </Navbar.Collapse>

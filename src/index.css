@@ -18,3 +18,8 @@ code {
  .page-links:hover{
    text-decoration: none;
  }
+
+ .w3-image{
+  filter: blur(8px) !important;
+  -webkit-filter: blur(8px)!important;
+}
