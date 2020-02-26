@@ -32,22 +32,22 @@ const NavigationBar = () => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ml-auto">
-            <Nav.Item>
+            <Nav.Item className="nav-item nav-link">
               <Link className="page-links" to="/">
                 Home
               </Link>
             </Nav.Item>
-            <Nav.Item>
+            <Nav.Item className="nav-item nav-link">
               <Link className="page-links" to="/profile">
                 Profile
               </Link>
             </Nav.Item>
-            <Nav.Item>
+            <Nav.Item className="nav-item nav-link">
               <Link className="page-links" to="/projects">
                 Projects
               </Link>
             </Nav.Item>
-            <Nav.Item>
+            <Nav.Item className="nav-item nav-link">
               <Link className="page-links" to="/contact">
                 Contact Me
               </Link>

@@ -1,13 +1,18 @@
 import React, { Component } from "react";
-// import Layout from "./components/Layout";
-// import NavigationBar from "./components/Navbar";
+import NavigationBar from "./components/Navbar";
 import Routing from "./Routing";
+import Jumbo from "./components/Jumbo";
+import './App.css'
 
 class App extends Component {
   render() {
     return (
       <div>
-        <Routing />
+        <NavigationBar />
+        
+          <Jumbo />
+          <Routing />
+       
       </div>
     );
   }

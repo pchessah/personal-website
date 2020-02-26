@@ -19,7 +19,6 @@ code {
    text-decoration: none;
  }
 
- .w3-image{
-  filter: blur(8px) !important;
-  -webkit-filter: blur(8px)!important;
+ .cards{
+  border-radius: 5px;
 }

@@ -37,11 +37,10 @@
   }
 }
 
-.w3-image{
-  filter: blur(1px) !important;
-  -webkit-filter: blur(1px)!important;
-}
-
 .homeNav{
   background-color: #1E4E79 !important;
+}
+
+.cards{
+  border-style: groove;
 }
