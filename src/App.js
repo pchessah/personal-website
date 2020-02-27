@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import NavigationBar from "./components/Navbar";
-import Routing from "./Routing";
-import Jumbo from "./components/Jumbo";
+import NavigationBar from "./components/Navbar.jsx";
+import Routing from "./Routing.jsx";
+import Jumbo from "./components/Jumbo.jsx";
 import './App.css'
 
 class App extends Component {
