@@ -54,9 +54,11 @@ function Home() {
                     editing and deleting of text.
                   </p>
                 </CardText>
-                <Button style={{ backgroundColor: "#1e4e79" }}>
-                  Go to project
-                </Button>
+                <a href="https://paulchesablog.herokuapp.com/">
+                  <Button style={{ backgroundColor: "#1e4e79" }}>
+                    Go to project
+                  </Button>
+                </a>
               </CardBody>
             </Card>
 
