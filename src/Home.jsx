@@ -1,20 +1,12 @@
 import React from "react";
-import {
-  Card,
-  Button,
-  CardTitle,
-  CardText,
-  CardGroup,
-  CardBody
-} from "reactstrap";
+import { Button, CardTitle, CardText, CardGroup, CardBody } from "reactstrap";
 import { GoMarkGithub } from "react-icons/go";
-import {Link} from 'react-router-dom'
+import { Link } from "react-router-dom";
+import { Card } from "react-bootstrap";
 
 function Home() {
   return (
     <div>
-      <header></header>
-
       <div className="w3-content w3-padding" style={{ maxWidth: "1564px" }}>
         <div className="w3-container w3-padding-32" id="projects">
           <h3 className="w3-border-bottom w3-border-light-grey w3-padding-16">
@@ -24,11 +16,14 @@ function Home() {
 
         <div className="cards">
           <CardGroup>
-            <Card style={{ padding: "10px" }}>
+            <Card >
               <CardBody>
-                <CardTitle>
-                  <h4>Easeria Deliveries</h4>
-                </CardTitle>
+                <Card.Header style={{ backgroundColor: "#91CCFF" }}>
+                  <CardTitle>
+                    <h4>Easeria Deliveries</h4>
+                  </CardTitle>
+                </Card.Header>
+                <br/>
                 <CardText>
                   <p>
                     A delivery application made using Mongo Express React and
@@ -52,10 +47,12 @@ function Home() {
             </Card>
             <Card>
               <CardBody>
-                <CardTitle>
-                  <h4>Personal Blog</h4>
-                </CardTitle>
-
+                <Card.Header style={{ backgroundColor: "#91CCFF" }}>
+                  <CardTitle>
+                    <h4>Personal Blog</h4>
+                  </CardTitle>
+                </Card.Header>
+                <br/>
                 <CardText>
                   <p>
                     A personal blog showcasing CRUD using MERN stack. The
@@ -81,7 +78,9 @@ function Home() {
             <Card>
               <CardBody>
                 <CardTitle>
-                  <h4>Music Web app</h4>
+                  <Card.Header style={{ backgroundColor: "#91CCFF" }}>
+                    <h4>Music Web app</h4>
+                  </Card.Header>
                 </CardTitle>
 
                 <CardText>
@@ -117,8 +116,11 @@ function Home() {
             commitment with IT technical skills, honed through my educational
             background and prior experience as an IT Intern and Student
             developer....
-            <br/><Link style={{fontWeight:"900", fontSize: "18px"}} to="/profile">Click to see more
-          </Link> </p>
+            <br />
+            <Link style={{ fontWeight: "900", fontSize: "18px" }} to="/profile">
+              Click to see more
+            </Link>{" "}
+          </p>
         </div>
 
         <div className="w3-container w3-padding-32" id="contact">

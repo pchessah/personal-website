@@ -18,21 +18,21 @@ function Profile() {
                 />
               </div>
               <br />
-              <div className="w3-container" style={{ marginLeft: "12px" }}>
+              <div className="w3-container" style={{ marginLeft: "12px", color: "black"}}>
                 <p>
-                  <i className="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>
+                  <i  style={{ color: "#1e4e79" }}className="fa fa-briefcase fa-fw w3-margin-right w3-large "></i>
                   ICT Professional with proficiency in JavaScript and React
                 </p>
                 <p>
-                  <i className="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>
+                  <i  style={{ color: "#1e4e79" }} className="fa fa-home fa-fw w3-margin-right w3-large "></i>
                   Kisumu, Kenya
                 </p>
                 <p>
-                  <i className="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>
+                  <i style={{ color: "#1e4e79" }}className="fa fa-envelope fa-fw w3-margin-right w3-large "></i>
                   paulchesa1@gmail.com
                 </p>
                 <p>
-                  <i className="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>
+                  <i style={{ color: "#1e4e79" }}className="fa fa-phone fa-fw w3-margin-right w3-large "></i>
                   (254)706-165-412
                 </p>
                 <hr/>
@@ -50,8 +50,8 @@ function Profile() {
                 <hr />
 
                 <p className="w3-large">
-                  <b>
-                    <i className="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>
+                  <b style={{ color: "#1e4e79" }}>
+                    <i style={{ color: "#1e4e79" }}className="fa fa-asterisk fa-fw w3-margin-right "></i>
                     Skills
                   </b>
                 </p>
@@ -66,8 +66,8 @@ function Profile() {
                 </ul>
                 <br />
                 <p className="w3-large">
-                  <b>
-                    <i className="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>
+                  <b style={{ color: "#1e4e79" }}>
+                    <i className="fa fa-asterisk fa-fw w3-margin-right "></i>
                     Technology Toolbox
                   </b>
                 </p>
@@ -87,20 +87,20 @@ function Profile() {
             <br />
           </div>
 
-          <div className="w3-twothird">
+          <div className="w3-twothird" style={{color:"black"}}>
             <div className="w3-container w3-card w3-white w3-margin-bottom">
-              <h2 className="w3-text-grey w3-padding-16">
-                <i className="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>
+              <h2 style={{ color: "#1e4e79" }} className="w3-text-grey w3-padding-16">
+                <i style={{ color: "#1e4e79" }} className="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge "></i>
                 Work Experience
               </h2>
               <div className="w3-container">
-                <h5 className="w3-opacity">
+                <h5 style={{ color: "#1e4e79" }} className="w3-opacity">
                   <b>Student Developer / Lakehub Foundation </b>
                 </h5>
-                <h6 className="w3-text-teal">
+                <h6 className="">
                   <i className="fa fa-calendar fa-fw w3-margin-right"></i>Oct
                   2019 -{" "}
-                  <span className="w3-tag w3-teal w3-round">Current</span>
+                  <span className="w3-tag w3-round" style={{ backgroundColor: "#1e4e79" }}>Current</span>
                 </h6>
                 <p>
                   Web and stack development using fundamentals in JavaScript,
@@ -131,14 +131,14 @@ function Profile() {
               </div>
               <div className="w3-container">
                 <h5 className="w3-opacity">
-                  <b>IT intern / KEMRI CDC</b>
+                  <b style={{ color: "#1e4e79" }}> KEMRI CDC</b>
                 </h5>
-                <h6 className="w3-text-teal">
+                <h6 className="">
                   <i className="fa fa-calendar fa-fw w3-margin-right"></i>May
                   2019 - August 2019
                 </h6>
                 <p>
-                  Assisted in the daily ICT operations of the company and
+                  Involved in the daily ICT operations of the company and
                   provision of user support to members of the organization with
                   key successes in Assisting with computer and printer support.
                   Configuring new computers, notebooks and printers based on the
@@ -153,9 +153,9 @@ function Profile() {
               </div>
               <div className="w3-container">
                 <h5 className="w3-opacity">
-                  <b>IT Intern / Mumias Sugar</b>
+                  <b style={{ color: "#1e4e79" }}> Mumias Sugar</b>
                 </h5>
-                <h6 className="w3-text-teal">
+                <h6 className="">
                   <i className="fa fa-calendar fa-fw w3-margin-right"></i>May
                   2017 - August 2017
                 </h6>
@@ -181,16 +181,16 @@ function Profile() {
               </div>
             </div>
 
-            <div className="w3-container w3-card w3-white">
+            <div style={{color:"black"}}className="w3-container w3-card w3-white">
               <h2 className="w3-text-grey w3-padding-16">
-                <i className="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>
+                <i style={{ color: "#1e4e79" }} className="fa fa-certificate fa-fw w3-margin-right w3-xxlarge "></i>
                 Education
               </h2>
               <div className="w3-container">
                 <h5 className="w3-opacity">
-                  <b>Moi University: Bsc Informatics</b>
+                  <b style={{ color: "#1e4e79" }}>Moi University: Bsc Informatics</b>
                 </h5>
-                <h6 className="w3-text-teal">
+                <h6 className="">
                   <i className="fa fa-calendar fa-fw w3-margin-right"></i>
                   September 2014 - December 2019
                 </h6>
@@ -211,9 +211,9 @@ function Profile() {
 
               <div className="w3-container">
                 <h5 className="w3-opacity">
-                  <b>Lakehub Academy: Web and software development</b>
+                  <b style={{ color: "#1e4e79" }}>Lakehub Academy: Web and software development</b>
                 </h5>
-                <h6 className="w3-text-teal">
+                <h6 className="">
                   <i className="fa fa-calendar fa-fw w3-margin-right"></i>
                   October 2019 - March 2020
                 </h6>
@@ -226,9 +226,9 @@ function Profile() {
               </div>
               <div className="w3-container">
                 <h5 className="w3-opacity">
-                  <b>KCA University: CCNA/Routing and Switching</b>
+                  <b style={{ color: "#1e4e79" }}>KCA University: CCNA/Routing and Switching</b>
                 </h5>
-                <h6 className="w3-text-teal">
+                <h6 className="">
                   <i className="fa fa-calendar fa-fw w3-margin-right"></i>
                   January 2020
                 </h6>

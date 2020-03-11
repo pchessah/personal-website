@@ -58,12 +58,12 @@ const NavigationBar = () => {
               </Nav.Item>
               <Nav.Item className="nav-item nav-link">
                 <a href="https://www.linkedin.com/in/paul-chesa/">
-                  <FaLinkedin />
+                  <FaLinkedin style={{color: "white"}} />
                 </a>
               </Nav.Item>
               <Nav.Item className="nav-item nav-link">
                 <a href="https://github.com/pchessah">
-                  <GoMarkGithub />
+                  <GoMarkGithub style={{color: "white"}} />
                 </a>
               </Nav.Item>
             </Nav>
