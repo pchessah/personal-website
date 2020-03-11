@@ -8,7 +8,7 @@ const Styles = styled.div`
     background: url(${codeImg}) no-repeat fixed bottom;
     background-size: cover;
     color: #efefef;
-    height: 200px;
+    height: 300px;
     position: relative;
     z-index: -2;
   }
@@ -27,10 +27,9 @@ const Jumbo = () => {
     return (
     <Styles>
         <Jumbotron fluid className="jumbo">
-            <div className="overlay"></div>
+            <div></div>
             <Container>
-                <h1> Welcome...</h1>
-                <p> This is what I have to offer as a dev...</p>
+               
             </Container>
         </Jumbotron>
     </Styles>)

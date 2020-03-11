@@ -10,8 +10,9 @@ function ContactMe() {
         </h3>
         <p>Lets get in touch and talk about your next project.</p>
         <a href="https://www.linkedin.com/in/paul-chesa/">
-        <h5><FaLinkedin/>LinkedIn</h5>
+        <h5><FaLinkedin/>Click here to reach me om LinkedIn</h5>
         </a>
+        <br/>
         <form target="_blank">
           <input
             className="w3-input w3-border"

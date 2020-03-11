@@ -13,23 +13,20 @@ function Home() {
             Projects
           </h3>
         </div>
-
         <div className="cards">
           <CardGroup>
-            <Card >
+            <Card>
               <CardBody>
                 <Card.Header style={{ backgroundColor: "#91CCFF" }}>
                   <CardTitle>
                     <h4>Easeria Deliveries</h4>
                   </CardTitle>
                 </Card.Header>
-                <br/>
+                <br />
                 <CardText>
-                  <p>
-                    A delivery application made using Mongo Express React and
-                    Node. The appliction implements various aspects of HTML5 and
-                    CSS3.
-                  </p>
+                  A delivery application made using Mongo Express React and
+                  Node. The appliction implements various aspects of HTML5 and
+                  CSS3.
                 </CardText>
                 <a href="http://easeria.herokuapp.com">
                   <Button style={{ backgroundColor: "#1e4e79" }}>
@@ -52,13 +49,11 @@ function Home() {
                     <h4>Personal Blog</h4>
                   </CardTitle>
                 </Card.Header>
-                <br/>
+                <br />
                 <CardText>
-                  <p>
-                    A personal blog showcasing CRUD using MERN stack. The
-                    application features the use of a REST API in the posting,
-                    editing and deleting of text.
-                  </p>
+                  A personal blog showcasing CRUD using MERN stack. The
+                  application features the use of a REST API in the posting,
+                  editing and deleting of text.
                 </CardText>
                 <a href="https://paulchesablog.herokuapp.com/">
                   <Button style={{ backgroundColor: "#1e4e79" }}>
@@ -84,10 +79,8 @@ function Home() {
                 </CardTitle>
 
                 <CardText>
-                  <p>
-                    A music website used to showcase responsiveness using
-                    bootstrap. Made using React, HTML5 and CSS3.
-                  </p>
+                  A music website used to showcase responsiveness using
+                  bootstrap. Made using React, HTML5 and CSS3.
                 </CardText>
                 <br />
                 <a href="https://afromusiq.netlify.com/">
@@ -105,6 +98,10 @@ function Home() {
               </CardBody>
             </Card>
           </CardGroup>
+          <br />
+          <Link style={{ fontWeight: "900", fontSize: "18px" }} to="/projects">
+            Click to see more
+          </Link>{" "}
         </div>
 
         <div className="w3-container w3-padding-32" id="about">

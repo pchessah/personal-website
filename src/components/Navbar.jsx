@@ -16,7 +16,7 @@ const Styles = styled.div`
   .nav-link {
     color: #000000
 
-    &:hover {
+    &&:hover {
       color: white;
     }
   }
@@ -24,12 +24,12 @@ const Styles = styled.div`
 
 const NavigationBar = () => {
   return (
-    <div className="navbar-fixed-top">
+    <div className="navbar-fixed-top" style={{position: "fixed" ,top: "1",width:"100%", zIndex:"1"}}>
       <Styles>
         <Navbar expand="lg">
           <Navbar.Brand>
             <Link className="page-links" to="/">
-              <h3> Paul Chesa</h3>
+              <h4> Paul Chesa</h4>
             </Link>
             
           </Navbar.Brand>
