@@ -1,4 +1,6 @@
 import React from 'react';
+import { FaLinkedin } from "react-icons/fa";
+
 
 function ContactMe() {
     return (
@@ -7,6 +9,9 @@ function ContactMe() {
           Contact
         </h3>
         <p>Lets get in touch and talk about your next project.</p>
+        <a href="https://www.linkedin.com/in/paul-chesa/">
+        <h5><FaLinkedin/>LinkedIn</h5>
+        </a>
         <form target="_blank">
           <input
             className="w3-input w3-border"
@@ -37,7 +42,7 @@ function ContactMe() {
             name="Comment"
           />
           <button className="w3-button w3-black w3-section" type="submit">
-            <i className="fa fa-paper-plane"></i> SEND MESSAGE
+            <i className="fa fa-paper-plane"></i> Send Message
           </button>
         </form>
       </div>

@@ -2,6 +2,8 @@ import React from "react";
 import { Nav, Navbar } from "react-bootstrap";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
+import { FaLinkedin } from "react-icons/fa";
+import { GoMarkGithub } from "react-icons/go";
 
 const Styles = styled.div`
   .navbar {
@@ -29,6 +31,7 @@ const NavigationBar = () => {
             <Link className="page-links" to="/">
               <h3> Paul Chesa</h3>
             </Link>
+            
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
@@ -52,6 +55,16 @@ const NavigationBar = () => {
                 <Link className="page-links" to="/contact">
                   Contact Me
                 </Link>
+              </Nav.Item>
+              <Nav.Item className="nav-item nav-link">
+                <a href="https://www.linkedin.com/in/paul-chesa/">
+                  <FaLinkedin />
+                </a>
+              </Nav.Item>
+              <Nav.Item className="nav-item nav-link">
+                <a href="https://github.com/pchessah">
+                  <GoMarkGithub />
+                </a>
               </Nav.Item>
             </Nav>
           </Navbar.Collapse>

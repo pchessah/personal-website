@@ -7,6 +7,8 @@ import {
   CardGroup,
   CardBody
 } from "reactstrap";
+import { GoMarkGithub } from "react-icons/go";
+import {Link} from 'react-router-dom'
 
 function Home() {
   return (
@@ -31,12 +33,19 @@ function Home() {
                   <p>
                     A delivery application made using Mongo Express React and
                     Node. The appliction implements various aspects of HTML5 and
-                    CSS3
+                    CSS3.
                   </p>
                 </CardText>
                 <a href="http://easeria.herokuapp.com">
                   <Button style={{ backgroundColor: "#1e4e79" }}>
                     Go to project
+                  </Button>
+                </a>
+                <a href="https://github.com/pchessah/music_chart">
+                  <Button
+                    style={{ backgroundColor: "#1e4e79", margin: "10px" }}
+                  >
+                    View Code <GoMarkGithub />
                   </Button>
                 </a>
               </CardBody>
@@ -59,6 +68,13 @@ function Home() {
                     Go to project
                   </Button>
                 </a>
+                <a href="https://github.com/pchessah/Blog">
+                  <Button
+                    style={{ backgroundColor: "#1e4e79", margin: "10px" }}
+                  >
+                    View Code <GoMarkGithub />
+                  </Button>
+                </a>
               </CardBody>
             </Card>
 
@@ -71,12 +87,20 @@ function Home() {
                 <CardText>
                   <p>
                     A music website used to showcase responsiveness using
-                    bootstrap. Made using React, HTML5 and CSS3
+                    bootstrap. Made using React, HTML5 and CSS3.
                   </p>
                 </CardText>
+                <br />
                 <a href="https://afromusiq.netlify.com/">
                   <Button style={{ backgroundColor: "#1e4e79" }}>
                     Go to project
+                  </Button>
+                </a>
+                <a href="https://github.com/pchessah/Easeria_deliveries">
+                  <Button
+                    style={{ backgroundColor: "#1e4e79", margin: "10px" }}
+                  >
+                    View Code <GoMarkGithub />
                   </Button>
                 </a>
               </CardBody>
@@ -89,11 +113,12 @@ function Home() {
             About
           </h3>
           <p>
-            ICT Junior professional with range of skills. Strong customer
-            service commitment with IT technical skills, honed through my
-            educational background and prior experience as an IT Intern and
-            Student developer.
-          </p>
+            ICT professional with range of skills. Strong customer service
+            commitment with IT technical skills, honed through my educational
+            background and prior experience as an IT Intern and Student
+            developer....
+            <br/><Link style={{fontWeight:"900", fontSize: "18px"}} to="/profile">Click to see more
+          </Link> </p>
         </div>
 
         <div className="w3-container w3-padding-32" id="contact">
