@@ -1,58 +1,73 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  background-color:#94c6ff;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
- .page-links{
-   color: white;
- }
+.page-links {
+  color: white;
+}
 
- .page-links:hover{
-   text-decoration: none;
- }
+.page-links:hover {
+  text-decoration: none;
+}
 
- .cards{
+.cards {
   border-radius: 5px;
 }
 
-
-.nav-link h6:hover{
+.nav-link h6:hover {
   color: black !important;
-  background-color: white;
+  background-color: #94c6ff;
   padding: 5px;
   border-radius: 15px;
   text-align: center;
 }
 
-nav-item a:hover{
+nav-item a:hover {
   color: black !important;
-  background-color: white;
-
+  background-color: #94c6ff;
 }
 
-#homePage{
+#homePage {
   display: flex;
   flex-direction: column;
   align-items: center;
   height: 100vh;
   justify-content: center;
+  background-image: url("https://hdwallsource.com/img/2014/2/gif-wallpaper-32368-33113-hd-wallpapers.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
-#homePage h1{
-  color: black;
-  z-index: 100;
+#homePage h1 {
+  color:white;
 }
 
-#homePage img{
+#homePage img {
   border-radius: 100px;
-  height:200px;
+  height: 200px;
   width: 200px;
 }
+
+#basic-navbar-nav{
+  color: white;
+}
+
+@media only screen and (max-width: 474px){
+  #homeText{
+    display: flex;
+    flex-direction: row;
+    
+  }
+
+} 
