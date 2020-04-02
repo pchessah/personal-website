@@ -7,6 +7,13 @@ import { Card } from "react-bootstrap";
 function Home() {
   return (
     <div>
+      <div id="homePage">
+        <img
+          src="https://avatars2.githubusercontent.com/u/20629353?s=460&v=4"
+          alt="Avatar"
+        />
+        <h1>Hi, I am a Web Dev</h1>
+      </div>
       <div className="w3-content w3-padding" style={{ maxWidth: "1564px" }}>
         <div className="w3-container w3-padding-32" id="projects">
           <h3 className="w3-border-bottom w3-border-light-grey w3-padding-16">

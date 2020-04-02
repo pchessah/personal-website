@@ -22,3 +22,37 @@ code {
  .cards{
   border-radius: 5px;
 }
+
+
+.nav-link h6:hover{
+  color: black !important;
+  background-color: white;
+  padding: 5px;
+  border-radius: 15px;
+  text-align: center;
+}
+
+nav-item a:hover{
+  color: black !important;
+  background-color: white;
+
+}
+
+#homePage{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  justify-content: center;
+}
+
+#homePage h1{
+  color: black;
+  z-index: 100;
+}
+
+#homePage img{
+  border-radius: 100px;
+  height:200px;
+  width: 200px;
+}
