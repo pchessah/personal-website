@@ -1,15 +1,15 @@
 import React, { Component } from "react";
 import NavigationBar from "./components/Navbar.jsx";
-import Routing from "./Routing.jsx";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+import Home from "./Home.jsx";
 
 class App extends Component {
   render() {
     return (
       <div>
-        <NavigationBar />
-        <Routing />
+        <NavigationBar /> 
+        <Home/>      
       </div>
     );
   }
