@@ -7,16 +7,27 @@ import { FaLinkedin } from "react-icons/fa";
 function Home() {
   return (
     <div>
-      <div id="homePage"></div>
+      <div id="homePage">
+        <section>
+          Paul Chesa, <br />
+          Frontend developer <br />
+          <br />
+          <div className="arrow">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </section>
+      </div>
+
+      <br />
+
       <div className="w3-content w3-padding" style={{ maxWidth: "1564px" }}>
         <div className="w3-container w3-padding-32" id="projects">
           <h3 className="w3-border-bottom w3-border-light-grey w3-padding-16">
             Projects
           </h3>
         </div>
-
-        <br />
-
         <div id="projects" className="cards">
           <CardGroup>
             <Card>
@@ -32,12 +43,20 @@ function Home() {
                   Node. The appliction implements various aspects of HTML5 and
                   CSS3.
                 </CardText>
-                <a href="http://easeria.herokuapp.com" target="_blank" rel="noopener noreferrer">
+                <a
+                  href="http://easeria.herokuapp.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <Button style={{ backgroundColor: "#1e4e79" }}>
                     Go to project
                   </Button>
                 </a>
-                <a href="https://github.com/pchessah/music_chart" target="_blank" rel="noopener noreferrer">
+                <a
+                  href="https://github.com/pchessah/music_chart"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <Button
                     style={{ backgroundColor: "#1e4e79", margin: "10px" }}
                   >
@@ -59,12 +78,20 @@ function Home() {
                   application features the use of a REST API in the posting,
                   editing and deleting of text.
                 </CardText>
-                <a href="https://paulchesablog.herokuapp.com/" target="_blank" rel="noopener noreferrer">
+                <a
+                  href="https://paulchesablog.herokuapp.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <Button style={{ backgroundColor: "#1e4e79" }}>
                     Go to project
                   </Button>
                 </a>
-                <a href="https://github.com/pchessah/Blog" target="_blank" rel="noopener noreferrer">
+                <a
+                  href="https://github.com/pchessah/Blog"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <Button
                     style={{ backgroundColor: "#1e4e79", margin: "10px" }}
                   >
@@ -86,12 +113,20 @@ function Home() {
                   bootstrap. Made using React, HTML5 and CSS3.
                 </CardText>
                 <br />
-                <a href="https://afromusiq.netlify.com/" target="_blank" rel="noopener noreferrer">
+                <a
+                  href="https://afromusiq.netlify.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <Button style={{ backgroundColor: "#1e4e79" }}>
                     Go to project
                   </Button>
                 </a>
-                <a href="https://github.com/pchessah/Easeria_deliveries" target="_blank" rel="noopener noreferrer">
+                <a
+                  href="https://github.com/pchessah/Easeria_deliveries"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <Button
                     style={{ backgroundColor: "#1e4e79", margin: "10px" }}
                   >
@@ -424,7 +459,7 @@ function Home() {
           <a href="https://www.linkedin.com/in/paul-chesa/">
             <h5>
               <FaLinkedin />
-              Click here to reach me om LinkedIn
+              Click here to reach me on LinkedIn
             </h5>
           </a>
           <br />

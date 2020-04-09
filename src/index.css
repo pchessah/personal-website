@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Comic+Neue:700&display=swap');
 body {
   margin: 0;
   background-color:#94c6ff;
@@ -48,6 +49,11 @@ nav-item a:hover {
   background-attachment: fixed;
   background-size: cover;
 }
+ #homePage section {
+  font-family: 'Comic Neue', cursive;
+  color: white !important;
+  font-size: 40px;
+ }
 
 #homePage h1 {
   color:white;
@@ -59,15 +65,71 @@ nav-item a:hover {
   width: 200px;
 }
 
+
 #basic-navbar-nav{
   color: white;
 }
 
-@media only screen and (max-width: 474px){
-  #homeText{
+@media only screen and (max-width: 550px){
+ #homePage section{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    align-self: flex-start !important; 
+    justify-self: flex-end !important;
+    color: white !important;
+    font-size: larger;
+    font-family: 'Comic Neue', cursive; 
     
   }
 
 } 
+
+
+@media only screen and (max-width: 768px){
+  #homePage section{
+     display: flex;
+     flex-direction: column;
+     align-self: flex-start !important; 
+     color: white !important;
+     font-size: larger;
+     font-family: 'Comic Neue', cursive; 
+     
+   }
+ 
+ } 
+
+ .arrow{
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.arrow span{
+  display: block;
+  width: 30px;
+  height: 30px;
+  border-bottom: 5px solid #FFFF;
+  border-right: 5px solid #FFFF;
+  transform: rotate(45deg);
+  margin: -10px;
+  animation: animate 2s infinite;
+}
+.arrow span:nth-child(2){
+  animation-delay: -0.2s;
+}
+.arrow span:nth-child(3){
+  animation-delay: -0.4s;
+}
+@keyframes animate {
+  0%{
+      opacity: 0;
+      transform: rotate(45deg) translate(-20px,-20px);
+  }
+  50%{
+      opacity: 1;
+  }
+  100%{
+      opacity: 0;
+      transform: rotate(45deg) translate(20px,20px);
+  }
+}
