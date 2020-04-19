@@ -1,10 +1,40 @@
-import React from "react";
+import React, { useState } from "react";
 import { Button, CardTitle, CardText, CardGroup, CardBody } from "reactstrap";
 import { GoMarkGithub } from "react-icons/go";
 import { Card } from "react-bootstrap";
 import { FaLinkedin } from "react-icons/fa";
 
 function Home() {
+  const [emailState, setEmailState] = useState({
+    name: "Name",
+    Email: "example@email.com",
+    comment: "comment",
+  });
+
+  const handleChange = (e)=>{
+    setEmailState({comment: e.target.value})
+
+  }
+
+  const handleSubmit = (e) =>{
+    const templateId = 'template_id';
+    sendFeedback(templateId, {message_html: emailState.comment, from_name: emailState.name, reply_to: emailState.email})
+
+  }
+
+  const sendFeedback = (templateId, variables)=> {
+    window.emailjs.send(
+      'gmail', templateId,
+      variables
+      ).then(res => {
+        console.log('Email successfully sent!')
+      })
+      // Handle errors here however you like, or use a React error boundary
+      .catch(err => console.error('Oh well, you failed. Here some thoughts on the error that occured:', err))
+    }
+
+
+
   return (
     <div>
       <div id="homePage">
@@ -54,6 +84,39 @@ function Home() {
                 </a>
                 <a
                   href="https://github.com/pchessah/music_chart"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Button
+                    style={{ backgroundColor: "#1e4e79", margin: "10px" }}
+                  >
+                    View Code <GoMarkGithub />
+                  </Button>
+                </a>
+              </CardBody>
+            </Card>
+            <Card>
+              <CardBody>
+                <Card.Header style={{ backgroundColor: "#91CCFF" }}>
+                  <CardTitle>
+                    <h4>Ecommerce site</h4>
+                  </CardTitle>
+                </Card.Header>
+                <br />
+                <CardText>
+            A front-end ecommerce site that allows orders to be submitted via whatsapp
+                </CardText>
+                <a
+                  href="http://gamecraft.netlify.app"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Button style={{ backgroundColor: "#1e4e79" }}>
+                    Go to project
+                  </Button>
+                </a>
+                <a
+                  href="https://github.com/pchessah/ecommerce"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -491,8 +554,14 @@ function Home() {
               placeholder="Comment"
               required
               name="Comment"
+              value={emailState.feedback}
+              onChange={handleChange}
             />
-            <button className="w3-button w3-black w3-section" type="submit">
+            <button
+              className="w3-button w3-black w3-section"
+              type="submit"
+              onClick={handleSubmit}
+            >
               <i className="fa fa-paper-plane"></i> Send Message
             </button>
           </form>
