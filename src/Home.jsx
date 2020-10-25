@@ -11,27 +11,27 @@ function Home() {
     comment: "comment",
   });
 
-  const handleChange = (e)=>{
-    setEmailState({comment: e.target.value})
+  const handleChange = (e) => {
+    setEmailState({ comment: e.target.value })
 
   }
 
-  const handleSubmit = (e) =>{
+  const handleSubmit = (e) => {
     const templateId = 'template_id';
-    sendFeedback(templateId, {message_html: emailState.comment, from_name: emailState.name, reply_to: emailState.email})
+    sendFeedback(templateId, { message_html: emailState.comment, from_name: emailState.name, reply_to: emailState.email })
 
   }
 
-  const sendFeedback = (templateId, variables)=> {
+  const sendFeedback = (templateId, variables) => {
     window.emailjs.send(
       'gmail', templateId,
       variables
-      ).then(res => {
-        console.log('Email successfully sent!')
-      })
+    ).then(res => {
+      console.log('Email successfully sent!')
+    })
       // Handle errors here however you like, or use a React error boundary
       .catch(err => console.error('Oh well, you failed. Here some thoughts on the error that occured:', err))
-    }
+  }
 
 
 
@@ -104,7 +104,7 @@ function Home() {
                 </Card.Header>
                 <br />
                 <CardText>
-            A front-end ecommerce site that allows orders to be submitted via whatsapp
+                  A front-end ecommerce site that allows orders to be submitted via whatsapp
                 </CardText>
                 <a
                   href="http://gamecraft.netlify.app"
@@ -137,7 +137,7 @@ function Home() {
                 </Card.Header>
                 <br />
                 <CardText>
-                 Ecommerce site for buying and selling fish feeds
+                  Ecommerce site for buying and selling fish feeds
                 </CardText>
                 <a
                   href="http://fishcart.herokuapp.com/"
@@ -170,7 +170,7 @@ function Home() {
                 </CardTitle>
 
                 <CardText>
-                CRUD operations of notes using Angular
+                  CRUD operations of notes using Angular
                 </CardText>
                 <br />
                 <a
@@ -338,31 +338,16 @@ function Home() {
                         </span>
                       </h6>
                       <p>
-                        Web and stack development using fundamentals in
-                        JavaScript, React, Mongo dB Node and Express for various
-                        projects including a delivery application and a budget
-                        application. Experience in SDLC through development of
-                        capstone project of a delivery application highlighting
-                        skills in Requirements analysis, implementation and
-                        maintenance. Deployment of various projects on Heroku
-                        and updated changes on the Heroku platform when
-                        application required changes. Develop user interfaces
-                        using React, HTML5 and CSS3 for delivery application.
-                        Code review of various projects implementing skills and
-                        knowledge in best practices in software development and
-                        refactoring code to improve output as well as debugging
-                        common errors in software. Good experience in
-                        understanding One-way data flow, virtual DOM, JSX,
-                        components, state and composition based on fundamentals
-                        in React and using it on delivery and budget application
-                        in development. Worked with components, Forms, Routers
-                        and Events using React .Develop unit tests for
-                        applications and software during learning and code
-                        review sessions. using Jest and enzyme. Maintaining
-                        state and stores and dispatched actions using redux
-                        while creating reducers to be used to modify state tree
-                        on a budget app .Extensively use git for version control
-                        and pushing code to GitHub for the projects.
+                        Web and stack development using fundamentals in JavaScript, React, Mongo dB Node and Express for various projects including an ecommerce application.
+                        Experience in SDLC through development of capstone project of an ecommerce application highlighting skills in Requirements analysis, implementation and maintenance.
+                        Deployment of various projects on Heroku and updated changes on the Heroku platform when application required changes.
+                        Develop user interfaces using React, HTML5 and CSS3 for ecommerce application.
+                        Code review of various projects implementing skills and knowledge in best practices in software development and refactoring code to improve output as well as debugging common errors in software.
+                        Good experience in understanding One-way data flow, virtual DOM, JSX, components, state and composition based on fundamentals in React and using it on delivery and budget application in development.
+                        Worked with components, Forms, Routers and Events using React.
+                        Maintaining state and stores and dispatched actions using redux while creating reducers to be used to modify state tree on a budget app.
+                        Extensively use git for version control and pushing code to GitHub for the projects.
+
                       </p>
                       <hr />
                     </div>
@@ -469,10 +454,7 @@ function Home() {
                         October 2019 - March 2020
                       </h6>
                       <p>
-                        Thorough grounding on JavaScript programming Deep dive
-                        into Node.js Algorithmic Scripting with JavaScript React
-                        for Front-end Development Hybrid App Development with
-                        React Native
+                      Thorough grounding on JavaScript programming. Deep dive into Node.js. React for Front-end Development. Software development best practices.
                       </p>
                       <hr />
                     </div>
