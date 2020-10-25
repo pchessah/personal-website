@@ -278,7 +278,7 @@ function Home() {
                         </b>
                       </p>
                       <ul>
-                        <li>JavaScript, Reacct JS, Express JS, Node JS</li>
+                        <li>JavaScript, Reacct JS, Angular JS, Node JS</li>
                         <li>HTML5, CSS3</li>
                         <li>Version Control using Git and Github</li>
                         <li>Software Best Practices</li>
