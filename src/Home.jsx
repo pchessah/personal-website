@@ -69,7 +69,7 @@ function Home() {
                 </Card.Header>
                 <br />
                 <CardText>
-                  A delivery application made using Mongo Express React and
+                  An ecommerce platform made using Mongo Express React and
                   Node. The appliction implements various aspects of HTML5 and
                   CSS3.
                 </CardText>
@@ -83,7 +83,7 @@ function Home() {
                   </Button>
                 </a>
                 <a
-                  href="https://github.com/pchessah/music_chart"
+                  href="https://github.com/pchessah/Easeria_deliveries"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -132,17 +132,15 @@ function Home() {
               <CardBody>
                 <Card.Header style={{ backgroundColor: "#91CCFF" }}>
                   <CardTitle>
-                    <h4>Personal Blog</h4>
+                    <h4>Fishcart</h4>
                   </CardTitle>
                 </Card.Header>
                 <br />
                 <CardText>
-                  A personal blog showcasing CRUD using MERN stack. The
-                  application features the use of a REST API in the posting,
-                  editing and deleting of text.
+                 Ecommerce site for buying and selling fish feeds
                 </CardText>
                 <a
-                  href="https://paulchesablog.herokuapp.com/"
+                  href="http://fishcart.herokuapp.com/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -167,17 +165,16 @@ function Home() {
               <CardBody>
                 <CardTitle>
                   <Card.Header style={{ backgroundColor: "#91CCFF" }}>
-                    <h4>Music Web app</h4>
+                    <h4>Notes App</h4>
                   </Card.Header>
                 </CardTitle>
 
                 <CardText>
-                  A music website used to showcase responsiveness using
-                  bootstrap. Made using React, HTML5 and CSS3.
+                CRUD operations of notes using Angular
                 </CardText>
                 <br />
                 <a
-                  href="https://afromusiq.netlify.com/"
+                  href="https://chesa-notes.netlify.com/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -186,7 +183,7 @@ function Home() {
                   </Button>
                 </a>
                 <a
-                  href="https://github.com/pchessah/Easeria_deliveries"
+                  href="https://github.com/pchessah/note-app"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -233,7 +230,7 @@ function Home() {
                           style={{ color: "#1e4e79" }}
                           className="fa fa-briefcase fa-fw w3-margin-right w3-large "
                         ></i>
-                        ICT Professional with proficiency in JavaScript and
+                        ICT Professional with proficiency in JavaScript, Angular and
                         React
                       </p>
                       <p>
