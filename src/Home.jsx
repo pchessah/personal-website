@@ -195,6 +195,40 @@ function Home() {
                 </a>
               </CardBody>
             </Card>
+            <Card>
+              <CardBody>
+                <CardTitle>
+                  <Card.Header style={{ backgroundColor: "#91CCFF" }}>
+                    <h4>Wine store</h4>
+                  </Card.Header>
+                </CardTitle>
+
+                <CardText>
+                  An angular and firebase application
+                </CardText>
+                <br />
+                <a
+                  href="https://chesa-wine-store.netlify.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Button style={{ backgroundColor: "#1e4e79" }}>
+                    Go to project
+                  </Button>
+                </a>
+                <a
+                  href="https://github.com/pchessah/wine-store"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Button
+                    style={{ backgroundColor: "#1e4e79", margin: "10px" }}
+                  >
+                    View Code <GoMarkGithub />
+                  </Button>
+                </a>
+              </CardBody>
+            </Card>
           </CardGroup>
           <br />
         </div>
@@ -454,7 +488,7 @@ function Home() {
                         October 2019 - March 2020
                       </h6>
                       <p>
-                      Thorough grounding on JavaScript programming. Deep dive into Node.js. React for Front-end Development. Software development best practices.
+                        Thorough grounding on JavaScript programming. Deep dive into Node.js. React for Front-end Development. Software development best practices.
                       </p>
                       <hr />
                     </div>
