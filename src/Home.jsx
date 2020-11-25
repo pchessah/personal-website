@@ -59,7 +59,7 @@ function Home() {
           </h3>
         </div>
         <div id="projects" className="cards">
-          <CardGroup>
+          <CardGroup className="cardGroup">
             <Card>
               <CardBody>
                 <Card.Header style={{ backgroundColor: "#91CCFF" }}>
@@ -382,6 +382,21 @@ function Home() {
                         Maintaining state and stores and dispatched actions using redux while creating reducers to be used to modify state tree on a budget app.
                         Extensively use git for version control and pushing code to GitHub for the projects.
 
+                      </p>
+                      <hr />
+                    </div>
+                    <div className="w3-container">
+                      <h5 className="w3-opacity">
+                        <b style={{ color: "#1e4e79" }}> Elewa Company</b>
+                      </h5>
+                      <h6 className="">
+                        <i className="fa fa-calendar fa-fw w3-margin-right"></i>
+                        August 2020 - September 2020
+                      </h6>
+                      <p>
+                        Part of team to redesign a property management web application using Angular Js, Firebase and CSS.
+                        Requirements gathering and analysis for a bot app built using firebase and Angular Js.
+                        Maintenance of codebase using version control of git and github.
                       </p>
                       <hr />
                     </div>

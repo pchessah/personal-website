@@ -44,3 +44,8 @@
 .cards{
   border-style: groove;
 }
+
+.cardGroup{
+  display: flex;
+  flex-wrap: wrap;
+}
