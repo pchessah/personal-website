@@ -1,39 +1,49 @@
-import React, { useState } from "react";
-import { Button, CardTitle, CardText, CardGroup, CardBody } from "reactstrap";
-import { GoMarkGithub } from "react-icons/go";
-import { Card } from "react-bootstrap";
-import { FaLinkedin } from "react-icons/fa";
+import React, { useState } from 'react'
+import { CardTitle, CardText, Row, Col } from 'reactstrap'
+import { GoMarkGithub } from 'react-icons/go'
+import { Card } from 'react-bootstrap'
+import { FaLinkedin } from 'react-icons/fa'
+import easeria from "./assets/easeria-deliveries.png";
+import gamecrafters from "./assets/game-crafters.png";
+import wineStore from "./assets/wine-store.png";
+import notesApp from "./assets/notes-app.png";
+import dashboard from "./assets/chesa-dashboard.png";
+import fishcart from "./assets/fish-cart.png";
+
 
 function Home() {
   const [emailState, setEmailState] = useState({
-    name: "Name",
-    Email: "example@email.com",
-    comment: "comment",
-  });
+    name: 'Name',
+    Email: 'example@email.com',
+    comment: 'comment',
+  })
 
   const handleChange = (e) => {
     setEmailState({ comment: e.target.value })
-
   }
 
   const handleSubmit = (e) => {
-    const templateId = 'template_id';
-    sendFeedback(templateId, { message_html: emailState.comment, from_name: emailState.name, reply_to: emailState.email })
-
+    const templateId = 'template_id'
+    sendFeedback(templateId, {
+      message_html: emailState.comment,
+      from_name: emailState.name,
+      reply_to: emailState.email,
+    })
   }
 
   const sendFeedback = (templateId, variables) => {
-    window.emailjs.send(
-      'gmail', templateId,
-      variables
-    ).then(res => {
-      console.log('Email successfully sent!')
-    })
+    window.Emailjs.send('gmail', templateId, variables)
+      .then((res) => {
+        console.log('Email successfully sent!')
+      })
       // Handle errors here however you like, or use a React error boundary
-      .catch(err => console.error('Oh well, you failed. Here some thoughts on the error that occured:', err))
+      .catch((err) =>
+        console.error(
+          'Oh well, you failed. Here some thoughts on the error that occured:',
+          err,
+        ),
+      )
   }
-
-
 
   return (
     <div>
@@ -52,185 +62,217 @@ function Home() {
 
       <br />
 
-      <div className="w3-content w3-padding" style={{ maxWidth: "1564px" }}>
+      <div className="w3-content w3-padding" style={{ maxWidth: '1564px' }}>
         <div className="w3-container w3-padding-32" id="projects">
           <h3 className="w3-border-bottom w3-border-light-grey w3-padding-16">
             Projects
           </h3>
         </div>
-        <div id="projects" className="cards">
-          <CardGroup className="cardGroup">
-            <Card>
-              <CardBody>
-                <Card.Header style={{ backgroundColor: "#91CCFF" }}>
-                  <CardTitle>
-                    <h4>Easeria Deliveries</h4>
-                  </CardTitle>
-                </Card.Header>
-                <br />
-                <CardText>
-                  An ecommerce platform made using Mongo Express React and
-                  Node. The appliction implements various aspects of HTML5 and
-                  CSS3.
-                </CardText>
-                <a
-                  href="http://easeria.herokuapp.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <Button style={{ backgroundColor: "#1e4e79" }}>
-                    Go to project
-                  </Button>
-                </a>
-                <a
-                  href="https://github.com/pchessah/Easeria_deliveries"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <Button
-                    style={{ backgroundColor: "#1e4e79", margin: "10px" }}
-                  >
-                    View Code <GoMarkGithub />
-                  </Button>
-                </a>
-              </CardBody>
-            </Card>
-            <Card>
-              <CardBody>
-                <Card.Header style={{ backgroundColor: "#91CCFF" }}>
-                  <CardTitle>
-                    <h4>Ecommerce site</h4>
-                  </CardTitle>
-                </Card.Header>
-                <br />
-                <CardText>
-                  A front-end ecommerce site that allows orders to be submitted via whatsapp
-                </CardText>
-                <a
-                  href="http://gamecraft.netlify.app"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <Button style={{ backgroundColor: "#1e4e79" }}>
-                    Go to project
-                  </Button>
-                </a>
-                <a
-                  href="https://github.com/pchessah/ecommerce"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <Button
-                    style={{ backgroundColor: "#1e4e79", margin: "10px" }}
-                  >
-                    View Code <GoMarkGithub />
-                  </Button>
-                </a>
-              </CardBody>
-            </Card>
-            <Card>
-              <CardBody>
-                <Card.Header style={{ backgroundColor: "#91CCFF" }}>
-                  <CardTitle>
-                    <h4>Fishcart</h4>
-                  </CardTitle>
-                </Card.Header>
-                <br />
-                <CardText>
-                  Ecommerce site for buying and selling fish feeds
-                </CardText>
-                <a
-                  href="http://fishcart.herokuapp.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <Button style={{ backgroundColor: "#1e4e79" }}>
-                    Go to project
-                  </Button>
-                </a>
-                <a
-                  href="https://github.com/pchessah/Blog"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <Button
-                    style={{ backgroundColor: "#1e4e79", margin: "10px" }}
-                  >
-                    View Code <GoMarkGithub />
-                  </Button>
-                </a>
-              </CardBody>
-            </Card>
-            <Card>
-              <CardBody>
-                <CardTitle>
-                  <Card.Header style={{ backgroundColor: "#91CCFF" }}>
-                    <h4>Notes App</h4>
-                  </Card.Header>
-                </CardTitle>
 
-                <CardText>
-                  CRUD operations of notes using Angular
-                </CardText>
-                <br />
-                <a
-                  href="https://chesa-notes.netlify.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <Button style={{ backgroundColor: "#1e4e79" }}>
-                    Go to project
-                  </Button>
-                </a>
-                <a
-                  href="https://github.com/pchessah/note-app"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <Button
-                    style={{ backgroundColor: "#1e4e79", margin: "10px" }}
+        <div className="row projects">
+          {/* row 1 */}
+          <Row>
+            <Col sm="4">
+              <Card body className="project-card">
+                <CardTitle tag="h5">Easeria Deliveries </CardTitle>
+                <img
+                  src={easeria}
+                  alt="easeria-deliveries"
+                  className="project-img"
+                  />
+                  <CardText>
+                    The front-end of a delivery platform made using Mongo Express
+                    React and Node. The appliction implements various aspects of
+                    HTML5 and CSS3.
+                  </CardText>
+                <Row>
+                  <a
+                    href="http://easeria.netlify.app"
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
-                    View Code <GoMarkGithub />
-                  </Button>
-                </a>
-              </CardBody>
-            </Card>
-            <Card>
-              <CardBody>
-                <CardTitle>
-                  <Card.Header style={{ backgroundColor: "#91CCFF" }}>
-                    <h4>Wine store</h4>
-                  </Card.Header>
-                </CardTitle>
-
-                <CardText>
-                  An angular and firebase application
-                </CardText>
-                <br />
-                <a
-                  href="https://chesa-wine-store.netlify.app/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <Button style={{ backgroundColor: "#1e4e79" }}>
-                    Go to project
-                  </Button>
-                </a>
-                <a
-                  href="https://github.com/pchessah/wine-store"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <Button
-                    style={{ backgroundColor: "#1e4e79", margin: "10px" }}
+                    <button className="project-card-btns">Go to project</button>
+                  </a>
+                  <a
+                    href="https://github.com/pchessah/Easeria_deliveries"
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
-                    View Code <GoMarkGithub />
-                  </Button>
-                </a>
-              </CardBody>
-            </Card>
-          </CardGroup>
+                    <button className="project-card-btns">
+                      View Code <GoMarkGithub />
+                    </button>
+                  </a>
+                </Row>
+              </Card>
+            </Col>
+            <Col sm="4">
+              <Card body className="project-card">
+                <CardTitle tag="h5">Ecommerce site</CardTitle>
+                <img
+                  src={gamecrafters}
+                  alt="game-vrafters"
+                  className="project-img"
+                  />
+                <CardText>
+                  A front-end ecommerce site built using react that allows
+                  orders to be submitted via whatsapp. Uses bootstrap and
+                  fontawesome icons
+                </CardText>
+                <Row>
+                  <a
+                    href="http://gamecraft.netlify.app"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <button className="project-card-btns">Go to project</button>
+                  </a>
+                  <a
+                    href="https://github.com/pchessah/ecommerce"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <button className="project-card-btns">
+                      View Code <GoMarkGithub />
+                    </button>
+                  </a>
+                </Row>
+              </Card>
+            </Col>
+            <Col sm="4">
+              <Card body className="project-card">
+                <CardTitle tag="h5">Fish Cart</CardTitle>
+                <img
+                  src={fishcart}
+                  alt="fish-cart"
+                  className="project-img"
+                  />
+                <CardText>
+                  A react web app that can be used for site for buying and
+                  selling fish feeds, fingerlings. Uses responsive web
+                  technologies such as bootstrap
+                </CardText>
+                <Row>
+                  <a
+                    href="http://fishcart.herokuapp.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <button className="project-card-btns">Go to project</button>
+                  </a>
+                  <a
+                    href="https://github.com/pchessah/ecommerce"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <button disabled className="project-card-btns">
+                      View Code <GoMarkGithub />
+                    </button>
+                  </a>
+                </Row>
+              </Card>
+            </Col>
+          </Row>
+          {/* next */}
           <br />
+          <Row>
+            <Col sm="4">
+              <Card body className="project-card">
+                <CardTitle tag="h5">Dashboard </CardTitle>
+                <img
+                  src={dashboard}
+                  alt="dashboard"
+                  className="project-img"
+                  />
+                <CardText>
+                  A sample dashboard created using react, chartjs and
+                  react-chart.js The platform is purely frontend.
+                </CardText>
+                <Row>
+                  <a
+                    href="https://chesa-simple-react-dashboard.netlify.app"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <button className="project-card-btns">Go to project</button>
+                  </a>
+                  <a
+                    href="https://github.com/pchessah/dashboard_react"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <button className="project-card-btns">
+                      View Code <GoMarkGithub />
+                    </button>
+                  </a>
+                </Row>
+              </Card>
+            </Col>
+            <Col sm="4">
+              <Card body className="project-card">
+                <CardTitle tag="h5">Wine store</CardTitle>
+                <img
+                  src={wineStore}
+                  alt="wine-store"
+                  className="project-img"
+                  />
+                <CardText>
+                  A front-end ecommerce site built using angular and firebase
+                  backend. Can place orders using email and whatsapp
+                </CardText>
+                <Row>
+                  <a
+                    href="https://chesa-wine-store.netlify.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <button className="project-card-btns">Go to project</button>
+                  </a>
+                  <a
+                    href="https://github.com/pchessah/wine-store"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <button className="project-card-btns">
+                      View Code <GoMarkGithub />
+                    </button>
+                  </a>
+                </Row>
+              </Card>
+            </Col>
+            <Col sm="4">
+              <Card body className="project-card">
+                <CardTitle tag="h5">Notes App</CardTitle>
+                <img
+                  src={notesApp}
+                  alt="notes"
+                  className="project-img"
+                  />
+                <CardText>
+                  An notes application used for creating simple notes on a mock
+                  server. The application showcases CRUD operations of notes
+                  using Angular
+                </CardText>
+                <Row>
+                  <a
+                    href="https://chesa-notes.netlify.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <button className="project-card-btns">Go to project</button>
+                  </a>
+                  <a
+                    href="https://github.com/pchessah/note-app"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <button disabled className="project-card-btns">
+                      View Code <GoMarkGithub />
+                    </button>
+                  </a>
+                </Row>
+              </Card>
+            </Col>
+          </Row>
         </div>
 
         <br />
@@ -242,7 +284,7 @@ function Home() {
           <div>
             <div
               className="w3-content w3-margin-top"
-              style={{ maxWidth: "1400px" }}
+              style={{ maxWidth: '1400px' }}
             >
               <div className="w3-row-padding">
                 <div className="w3-third">
@@ -250,62 +292,62 @@ function Home() {
                     <div className="w3-display-container">
                       <img
                         src="https://avatars2.githubusercontent.com/u/20629353?s=460&v=4"
-                        style={{ width: "100%" }}
+                        style={{ width: '100%' }}
                         alt="Avatar"
                       />
                     </div>
                     <br />
                     <div
                       className="w3-container"
-                      style={{ marginLeft: "12px", color: "black" }}
+                      style={{ marginLeft: '12px', color: 'black' }}
                     >
                       <p>
                         <i
-                          style={{ color: "#1e4e79" }}
+                          style={{ color: '#1e4e79' }}
                           className="fa fa-briefcase fa-fw w3-margin-right w3-large "
                         ></i>
-                        ICT Professional with proficiency in JavaScript, Angular and
-                        React
+                        ICT Professional with proficiency in JavaScript, Angular
+                        and React
                       </p>
                       <p>
                         <i
-                          style={{ color: "#1e4e79" }}
+                          style={{ color: '#1e4e79' }}
                           className="fa fa-home fa-fw w3-margin-right w3-large "
                         ></i>
                         Kisumu, Kenya
                       </p>
                       <p>
                         <i
-                          style={{ color: "#1e4e79" }}
+                          style={{ color: '#1e4e79' }}
                           className="fa fa-envelope fa-fw w3-margin-right w3-large "
                         ></i>
                         paulchesa1@gmail.com
                       </p>
                       <p>
                         <i
-                          style={{ color: "#1e4e79" }}
+                          style={{ color: '#1e4e79' }}
                           className="fa fa-phone fa-fw w3-margin-right w3-large "
                         ></i>
                         (254)706-165-412
                       </p>
                       <hr />
                       <a href="https://www.linkedin.com/in/paul-chesa/">
-                        <p style={{ color: "blue" }}>
-                          <FaLinkedin /> {"  "}View LinkedIn profile
+                        <p style={{ color: 'blue' }}>
+                          <FaLinkedin /> {'  '}View LinkedIn profile
                         </p>
                       </a>
 
                       <a href="https://github.com/pchessah">
-                        <p style={{ color: "black" }}>
-                          <GoMarkGithub /> {"  "}View Github profile
+                        <p style={{ color: 'black' }}>
+                          <GoMarkGithub /> {'  '}View Github profile
                         </p>
                       </a>
                       <hr />
 
                       <p className="w3-large">
-                        <b style={{ color: "#1e4e79" }}>
+                        <b style={{ color: '#1e4e79' }}>
                           <i
-                            style={{ color: "#1e4e79" }}
+                            style={{ color: '#1e4e79' }}
                             className="fa fa-asterisk fa-fw w3-margin-right "
                           ></i>
                           Skills
@@ -322,7 +364,7 @@ function Home() {
                       </ul>
                       <br />
                       <p className="w3-large">
-                        <b style={{ color: "#1e4e79" }}>
+                        <b style={{ color: '#1e4e79' }}>
                           <i className="fa fa-asterisk fa-fw w3-margin-right "></i>
                           Technology Toolbox
                         </b>
@@ -345,64 +387,79 @@ function Home() {
                   <br />
                 </div>
 
-                <div className="w3-twothird" style={{ color: "black" }}>
+                <div className="w3-twothird" style={{ color: 'black' }}>
                   <div className="w3-container w3-card w3-white w3-margin-bottom">
                     <h2
-                      style={{ color: "#1e4e79" }}
+                      style={{ color: '#1e4e79' }}
                       className="w3-text-grey w3-padding-16"
                     >
                       <i
-                        style={{ color: "#1e4e79" }}
+                        style={{ color: '#1e4e79' }}
                         className="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge "
                       ></i>
                       Work Experience
                     </h2>
                     <div className="w3-container">
-                      <h5 style={{ color: "#1e4e79" }} className="w3-opacity">
+                      <h5 style={{ color: '#1e4e79' }} className="w3-opacity">
                         <b>Student Developer / Lakehub Foundation </b>
                       </h5>
                       <h6 className="">
                         <i className="fa fa-calendar fa-fw w3-margin-right"></i>
-                        Oct 2019 -{" "}
+                        Oct 2019 -{' '}
                         <span
                           className="w3-tag w3-round"
-                          style={{ backgroundColor: "#1e4e79" }}
+                          style={{ backgroundColor: '#1e4e79' }}
                         >
                           Current
                         </span>
                       </h6>
                       <p>
-                        Web and stack development using fundamentals in JavaScript, React, Mongo dB Node and Express for various projects including an ecommerce application.
-                        Experience in SDLC through development of capstone project of an ecommerce application highlighting skills in Requirements analysis, implementation and maintenance.
-                        Deployment of various projects on Heroku and updated changes on the Heroku platform when application required changes.
-                        Develop user interfaces using React, HTML5 and CSS3 for ecommerce application.
-                        Code review of various projects implementing skills and knowledge in best practices in software development and refactoring code to improve output as well as debugging common errors in software.
-                        Good experience in understanding One-way data flow, virtual DOM, JSX, components, state and composition based on fundamentals in React and using it on delivery and budget application in development.
-                        Worked with components, Forms, Routers and Events using React.
-                        Maintaining state and stores and dispatched actions using redux while creating reducers to be used to modify state tree on a budget app.
-                        Extensively use git for version control and pushing code to GitHub for the projects.
-
+                        Web and stack development using fundamentals in
+                        JavaScript, React, Mongo dB Node and Express for various
+                        projects including an ecommerce application. Experience
+                        in SDLC through development of capstone project of an
+                        ecommerce application highlighting skills in
+                        Requirements analysis, implementation and maintenance.
+                        Deployment of various projects on Heroku and updated
+                        changes on the Heroku platform when application required
+                        changes. Develop user interfaces using React, HTML5 and
+                        CSS3 for ecommerce application. Code review of various
+                        projects implementing skills and knowledge in best
+                        practices in software development and refactoring code
+                        to improve output as well as debugging common errors in
+                        software. Good experience in understanding One-way data
+                        flow, virtual DOM, JSX, components, state and
+                        composition based on fundamentals in React and using it
+                        on delivery and budget application in development.
+                        Worked with components, Forms, Routers and Events using
+                        React. Maintaining state and stores and dispatched
+                        actions using redux while creating reducers to be used
+                        to modify state tree on a budget app. Extensively use
+                        git for version control and pushing code to GitHub for
+                        the projects.
                       </p>
                       <hr />
                     </div>
                     <div className="w3-container">
                       <h5 className="w3-opacity">
-                        <b style={{ color: "#1e4e79" }}> Elewa Company</b>
+                        <b style={{ color: '#1e4e79' }}> Elewa Company</b>
                       </h5>
                       <h6 className="">
                         <i className="fa fa-calendar fa-fw w3-margin-right"></i>
                         August 2020 - September 2020
                       </h6>
                       <p>
-                        Part of team to redesign a property management web application using Angular Js, Firebase and CSS.
-                        Requirements gathering and analysis for a bot app built using firebase and Angular Js.
-                        Maintenance of codebase using version control of git and github.
+                        Part of team to redesign a property management web
+                        application using Angular Js, Firebase and CSS.
+                        Requirements gathering and analysis for a bot app built
+                        using firebase and Angular Js. Maintenance of codebase
+                        using version control of git and github.
                       </p>
                       <hr />
                     </div>
                     <div className="w3-container">
                       <h5 className="w3-opacity">
-                        <b style={{ color: "#1e4e79" }}> KEMRI CDC</b>
+                        <b style={{ color: '#1e4e79' }}> KEMRI CDC</b>
                       </h5>
                       <h6 className="">
                         <i className="fa fa-calendar fa-fw w3-margin-right"></i>
@@ -425,7 +482,7 @@ function Home() {
                     </div>
                     <div className="w3-container">
                       <h5 className="w3-opacity">
-                        <b style={{ color: "#1e4e79" }}> Mumias Sugar</b>
+                        <b style={{ color: '#1e4e79' }}> Mumias Sugar</b>
                       </h5>
                       <h6 className="">
                         <i className="fa fa-calendar fa-fw w3-margin-right"></i>
@@ -456,19 +513,19 @@ function Home() {
                   </div>
 
                   <div
-                    style={{ color: "black" }}
+                    style={{ color: 'black' }}
                     className="w3-container w3-card w3-white"
                   >
                     <h2 className="w3-text-grey w3-padding-16">
                       <i
-                        style={{ color: "#1e4e79" }}
+                        style={{ color: '#1e4e79' }}
                         className="fa fa-certificate fa-fw w3-margin-right w3-xxlarge "
                       ></i>
                       Education
                     </h2>
                     <div className="w3-container">
                       <h5 className="w3-opacity">
-                        <b style={{ color: "#1e4e79" }}>
+                        <b style={{ color: '#1e4e79' }}>
                           Moi University: Bsc Informatics
                         </b>
                       </h5>
@@ -494,7 +551,7 @@ function Home() {
 
                     <div className="w3-container">
                       <h5 className="w3-opacity">
-                        <b style={{ color: "#1e4e79" }}>
+                        <b style={{ color: '#1e4e79' }}>
                           Lakehub Academy: Web and software development
                         </b>
                       </h5>
@@ -503,13 +560,15 @@ function Home() {
                         October 2019 - March 2020
                       </h6>
                       <p>
-                        Thorough grounding on JavaScript programming. Deep dive into Node.js. React for Front-end Development. Software development best practices.
+                        Thorough grounding on JavaScript programming. Deep dive
+                        into Node.js. React for Front-end Development. Software
+                        development best practices.
                       </p>
                       <hr />
                     </div>
                     <div className="w3-container">
                       <h5 className="w3-opacity">
-                        <b style={{ color: "#1e4e79" }}>
+                        <b style={{ color: '#1e4e79' }}>
                           KCA University: CCNA/Routing and Switching
                         </b>
                       </h5>
@@ -596,7 +655,7 @@ function Home() {
         </div>
       </div>
     </div>
-  );
+  )
 }
 
-export default Home;
+export default Home

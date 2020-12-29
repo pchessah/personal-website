@@ -133,3 +133,37 @@ nav-item a:hover {
       transform: rotate(45deg) translate(20px,20px);
   }
 }
+
+.project-card{
+  margin: 2px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  height: 300px;
+  font-size: 12px;
+}
+
+.project-img{
+  width: 100%;
+  margin: 2px;
+  height: 50%;
+}
+.project-card-body{
+  text-align: center;
+  padding: 5px;
+}
+
+.project-card-footer{
+  display: flex;
+  /* align-items: center;
+  flex-direction: column; */
+  justify-content: center;
+}
+
+.project-card-btns{
+  background-color: #1e4e79;
+  margin: 2px;
+  padding: 7.5px 12.5px;
+  color: white;
+  border-radius: 2px;
+  border: none;
+
+}
