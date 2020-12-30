@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Comic+Neue:700&display=swap');
 body {
   margin: 0;
-  background-color:#94c6ff;
+  background-color:whitesmoke;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
@@ -42,12 +42,13 @@ nav-item a:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 100vh;
+  height: 105vh;
   justify-content: center;
   background-image: url("https://hdwallsource.com/img/2014/2/gif-wallpaper-32368-33113-hd-wallpapers.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+  width: 105%;
 }
  #homePage section {
   font-family: 'Comic Neue', cursive;
@@ -135,7 +136,7 @@ nav-item a:hover {
 }
 
 .project-card{
-  margin: 2px;
+  margin: 4px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   height: 300px;
   font-size: 12px;
@@ -165,5 +166,10 @@ nav-item a:hover {
   color: white;
   border-radius: 2px;
   border: none;
+}
 
+.button-row{
+  display: flex !important;
+  flex-direction: row !important;
+  flex-wrap: wrap !important;
 }

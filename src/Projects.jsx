@@ -14,7 +14,7 @@ function Projects() {
         <div>
              {/* row 1 */}
           <Row>
-            <Col sm="4">
+            <Col sm="12" md="6" lg="4">
               <Card body className="project-card">
                 <CardTitle tag="h5">Easeria Deliveries </CardTitle>
                 <img
@@ -47,7 +47,7 @@ function Projects() {
                 </Row>
               </Card>
             </Col>
-            <Col sm="4">
+            <Col sm="12" md="6" lg="4">
               <Card body className="project-card">
                 <CardTitle tag="h5">Ecommerce site</CardTitle>
                 <img
@@ -80,7 +80,7 @@ function Projects() {
                 </Row>
               </Card>
             </Col>
-            <Col sm="4">
+            <Col sm="12" md="6" lg="4">
               <Card body className="project-card">
                 <CardTitle tag="h5">Fish Cart</CardTitle>
                 <img
@@ -114,10 +114,14 @@ function Projects() {
               </Card>
             </Col>
           </Row>
+
+
           {/* next */}
+
+
           <br />
           <Row>
-            <Col sm="4">
+            <Col  sm="12" md="6" lg="4">
               <Card body className="project-card">
                 <CardTitle tag="h5">Dashboard </CardTitle>
                 <img
@@ -149,7 +153,7 @@ function Projects() {
                 </Row>
               </Card>
             </Col>
-            <Col sm="4">
+            <Col sm="12" md="6" lg="4">
               <Card body className="project-card">
                 <CardTitle tag="h5">Wine store</CardTitle>
                 <img
@@ -181,7 +185,7 @@ function Projects() {
                 </Row>
               </Card>
             </Col>
-            <Col sm="4">
+            <Col sm="12" md="6" lg="4">
               <Card body className="project-card">
                 <CardTitle tag="h5">Notes App</CardTitle>
                 <img

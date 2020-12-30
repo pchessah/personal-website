@@ -5,38 +5,34 @@ import Projects from './Projects'
 
 
 function Home() {
-  const [emailState, setEmailState] = useState({
-    name: 'Name',
-    Email: 'example@email.com',
-    comment: 'comment',
-  })
+  const [whatsAppMsg, setWhatsAppMsg] = useState("");
 
-  const handleChange = (e) => {
-    setEmailState({ comment: e.target.value })
-  }
+  // const 
+
+
+  // const getLinkWhatsapp = (mobile_no, msg, url, userMessage) => {
+  //   url = whatsAppMsg.url; //URL TO BE PASSED TO ANCHOR TAG
+  //   mobile_no = whatsAppMsg.mobile_no; //MOBILE NUMBER TO BE SENT INFORMATION FROM SITE
+  //   let cartMessage2 = `Hi, I would like the following items from your site : `; //MESSAGE TO BE DISPLAYED WHEN SENDING
+
+  //   msg = cartMessage2.split(" ").join("%20"); //CREATE FORMAT OF URL TO BE USED TO SEND MESSAGE ON WHATSAPP
+
+
+  //   setWhatsAppMsg( (whatsAppMsg) => {
+  //     whatsAppMsg.url = "https://api.whatsapp.com/send?phone=" + //SET URL
+  //     mobile_no +
+  //     "&text=%20" +
+  //     msg,
+  //   }     
+       
+  //   );
+  // };
 
   const handleSubmit = (e) => {
-    const templateId = 'template_id'
-    sendFeedback(templateId, {
-      message_html: emailState.comment,
-      from_name: emailState.name,
-      reply_to: emailState.email,
-    })
+   
   }
 
-  const sendFeedback = (templateId, variables) => {
-    window.Emailjs.send('gmail', templateId, variables)
-      .then((res) => {
-        console.log('Email successfully sent!')
-      })
-      // Handle errors here however you like, or use a React error boundary
-      .catch((err) =>
-        console.error(
-          'Oh well, you failed. Here some thoughts on the error that occured:',
-          err,
-        ),
-      )
-  }
+
 
   return (
     <div>
@@ -432,8 +428,7 @@ function Home() {
               placeholder="Comment"
               required
               name="Comment"
-              value={emailState.feedback}
-              onChange={handleChange}
+              value=""
             />
             <button
               className="w3-button w3-black w3-section"
