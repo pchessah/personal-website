@@ -33,8 +33,11 @@ function ContactForm(props) {
         </h6>
       </a>
       <a href={url}>
-          <FaWhatsapp/>
+        <h6>
+        <FaWhatsapp/>
           <p>+254706165412</p>
+        </h6>
+         
       </a>
       <a href="https://www.linkedin.com/in/paul-chesa/">
         <h6>
