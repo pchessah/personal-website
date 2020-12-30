@@ -1,39 +1,11 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { GoMarkGithub } from 'react-icons/go'
 import { FaLinkedin } from 'react-icons/fa'
 import Projects from './Projects'
+import ContactForm from './ContactForm'
 
 
 function Home() {
-  const [whatsAppMsg, setWhatsAppMsg] = useState("");
-
-  // const 
-
-
-  // const getLinkWhatsapp = (mobile_no, msg, url, userMessage) => {
-  //   url = whatsAppMsg.url; //URL TO BE PASSED TO ANCHOR TAG
-  //   mobile_no = whatsAppMsg.mobile_no; //MOBILE NUMBER TO BE SENT INFORMATION FROM SITE
-  //   let cartMessage2 = `Hi, I would like the following items from your site : `; //MESSAGE TO BE DISPLAYED WHEN SENDING
-
-  //   msg = cartMessage2.split(" ").join("%20"); //CREATE FORMAT OF URL TO BE USED TO SEND MESSAGE ON WHATSAPP
-
-
-  //   setWhatsAppMsg( (whatsAppMsg) => {
-  //     whatsAppMsg.url = "https://api.whatsapp.com/send?phone=" + //SET URL
-  //     mobile_no +
-  //     "&text=%20" +
-  //     msg,
-  //   }     
-       
-  //   );
-  // };
-
-  const handleSubmit = (e) => {
-   
-  }
-
-
-
   return (
     <div>
       <div id="homePage">
@@ -386,58 +358,9 @@ function Home() {
           </div>
         </div>
 
-        <br />
-
+        <br /> 
         <div className="w3-container w3-padding-32" id="contact">
-          <h3 className="w3-border-bottom w3-border-light-grey w3-padding-16">
-            Contact
-          </h3>
-          <p>Lets get in touch and talk about your next project.</p>
-          <a href="https://www.linkedin.com/in/paul-chesa/">
-            <h5>
-              <FaLinkedin />
-              Click here to reach me on LinkedIn
-            </h5>
-          </a>
-          <br />
-          <form target="_blank">
-            <input
-              className="w3-input w3-border"
-              type="text"
-              placeholder="Name"
-              required
-              name="Name"
-            />
-            <input
-              className="w3-input w3-section w3-border"
-              type="text"
-              placeholder="Email"
-              required
-              name="Email"
-            />
-            <input
-              className="w3-input w3-section w3-border"
-              type="text"
-              placeholder="Subject"
-              required
-              name="Subject"
-            />
-            <input
-              className="w3-input w3-section w3-border"
-              type="text"
-              placeholder="Comment"
-              required
-              name="Comment"
-              value=""
-            />
-            <button
-              className="w3-button w3-black w3-section"
-              type="submit"
-              onClick={handleSubmit}
-            >
-              <i className="fa fa-paper-plane"></i> Send Message
-            </button>
-          </form>
+          <ContactForm/>
         </div>
       </div>
     </div>
