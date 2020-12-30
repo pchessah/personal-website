@@ -25,7 +25,7 @@ function ContactForm(props) {
       <h3 className="w3-border-bottom w3-border-light-grey w3-padding-16">
         Contact
       </h3>
-      <p>Lets get in touch and talk about your next project.</p>
+      <p>Lets get in touch and talk about your next project. Click prefered channel below</p>
       <a href="https://mail.google.com/mail/u/0/?ogbl#inbox">
         <h6>
           <SiGmail />
