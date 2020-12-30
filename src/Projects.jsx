@@ -113,14 +113,9 @@ function Projects() {
                 </Row>
               </Card>
             </Col>
-          </Row>
-
-
-          {/* next */}
-
 
           <br />
-          <Row>
+         
             <Col  sm="12" md="6" lg="4">
               <Card body className="project-card">
                 <CardTitle tag="h5">Dashboard </CardTitle>
