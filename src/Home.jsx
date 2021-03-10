@@ -4,7 +4,6 @@ import { FaLinkedin } from 'react-icons/fa'
 import Projects from './Projects'
 import ContactForm from './ContactForm'
 
-
 function Home() {
   return (
     <div>
@@ -31,8 +30,8 @@ function Home() {
         </div>
 
         <div className="row projects">
-          <Projects/>
-                 </div>
+          <Projects />
+        </div>
 
         <br />
 
@@ -73,7 +72,7 @@ function Home() {
                           style={{ color: '#1e4e79' }}
                           className="fa fa-home fa-fw w3-margin-right w3-large "
                         ></i>
-                        Kisumu, Kenya
+                        Nairobi, Kenya
                       </p>
                       <p>
                         <i
@@ -113,7 +112,7 @@ function Home() {
                         </b>
                       </p>
                       <ul>
-                        <li>JavaScript, Reacct JS, Angular JS, Node JS</li>
+                        <li>JavaScript, Reacct JS, Angular JS, Node JS, shopify</li>
                         <li>HTML5, CSS3</li>
                         <li>Version Control using Git and Github</li>
                         <li>Software Best Practices</li>
@@ -160,11 +159,11 @@ function Home() {
                     </h2>
                     <div className="w3-container">
                       <h5 style={{ color: '#1e4e79' }} className="w3-opacity">
-                        <b>Student Developer / Lakehub Foundation </b>
+                        <b>IT Assistant | Vivo Activewear </b>
                       </h5>
                       <h6 className="">
                         <i className="fa fa-calendar fa-fw w3-margin-right"></i>
-                        Oct 2019 -{' '}
+                        November 2020 -{' '}
                         <span
                           className="w3-tag w3-round"
                           style={{ backgroundColor: '#1e4e79' }}
@@ -173,12 +172,62 @@ function Home() {
                         </span>
                       </h6>
                       <p>
+                        Collaborate with other departments to determine
+                        programming objectives for Vivo activewear Participate
+                        in maintenance of Vivo activewear website. Edit and
+                        improve upon code in existing web programs and
+                        applications Ensuring code is error-free, readable,
+                        efficient, and logically organized for ease of access.
+                        Aptly naming variables and include code comments for
+                        future users. Providing supplemental program
+                        instructions and diagrams for code in layman’s terms.
+                        Developing set systems and tasks for efficient coding
+                        processes. Running extensive tests and trial runs to
+                        confirm proper functionality and desired results.
+                        Operating debugging software and seek out the root cause
+                        of error in coding or sequences.
+                      </p>
+                      <hr />
+                    </div>
+
+                    <div className="w3-container">
+                      <h5 className="w3-opacity">
+                        <b style={{ color: '#1e4e79' }}>
+                          Software Development Apprentice | Elewa Company
+                        </b>
+                      </h5>
+                      <h6 className="">
+                        <i className="fa fa-calendar fa-fw w3-margin-right"></i>
+                        August 2020 - September 2020
+                      </h6>
+                      <p>
+                        Part of team to redesign a property management web
+                        application using Angular Js, Firebase and CSS.
+                        Requirements gathering and analysis for a bot app built
+                        using firebase and Angular Js. Maintenance of codebase
+                        using version control of git and github.
+                      </p>
+                      <hr />
+                    </div>
+
+                    <div className="w3-container">
+                      <h5 className="w3-opacity">
+                        <b style={{ color: '#1e4e79' }}>
+                          {' '}
+                          Student Developer | Lakehub Academy
+                        </b>
+                      </h5>
+                      <h6 className="">
+                        <i className="fa fa-calendar fa-fw w3-margin-right"></i>
+                        October 2019 - February 2020
+                      </h6>
+                      <p>
                         Web and stack development using fundamentals in
                         JavaScript, React, Mongo dB Node and Express for various
                         projects including an ecommerce application. Experience
                         in SDLC through development of capstone project of an
                         ecommerce application highlighting skills in
-                        Requirements analysis, implementation and maintenance.
+                        Requirement’s analysis, implementation and maintenance.
                         Deployment of various projects on Heroku and updated
                         changes on the Heroku platform when application required
                         changes. Develop user interfaces using React, HTML5 and
@@ -196,23 +245,6 @@ function Home() {
                         to modify state tree on a budget app. Extensively use
                         git for version control and pushing code to GitHub for
                         the projects.
-                      </p>
-                      <hr />
-                    </div>
-                    <div className="w3-container">
-                      <h5 className="w3-opacity">
-                        <b style={{ color: '#1e4e79' }}> Elewa Company</b>
-                      </h5>
-                      <h6 className="">
-                        <i className="fa fa-calendar fa-fw w3-margin-right"></i>
-                        August 2020 - September 2020
-                      </h6>
-                      <p>
-                        Part of team to redesign a property management web
-                        application using Angular Js, Firebase and CSS.
-                        Requirements gathering and analysis for a bot app built
-                        using firebase and Angular Js. Maintenance of codebase
-                        using version control of git and github.
                       </p>
                       <hr />
                     </div>
@@ -358,9 +390,9 @@ function Home() {
           </div>
         </div>
 
-        <br /> 
+        <br />
         <div className="w3-container w3-padding-32" id="contact">
-          <ContactForm/>
+          <ContactForm />
         </div>
       </div>
     </div>
