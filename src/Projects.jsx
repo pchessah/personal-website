@@ -8,7 +8,7 @@ import wineStore from "./assets/wine-store.png";
 import notesApp from "./assets/notes-app.png";
 import dashboard from "./assets/chesa-dashboard.png";
 import fishcart from "./assets/fish-cart.png";
-
+import apondoFishApp from "./assets/Apondo-fish-farm.png"
 function Projects() {
     return (
         <div>
@@ -181,6 +181,37 @@ function Projects() {
               </Card>
             </Col>
             <Col sm="12" md="6" lg="4">
+            <Card body className="project-card">
+                <CardTitle tag="h5">Apondo Fish Farm</CardTitle>
+                <img
+                  src={apondoFishApp}
+                  alt="apondo-fish-farm"
+                  className="project-img"
+                  />
+                <CardText>
+                 A website made using angular for a fish famr in Nyanza, Kenya
+                </CardText>
+                <Row>
+                  <a
+                    href="https://apondo-fish-farm.vercel.app/home"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <button className="project-card-btns">Go to project</button>
+                  </a>
+                  <a
+                    href="https://github.com/pchessah/Apondo-fish-farm"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <button disabled className="project-card-btns">
+                      View Code <GoMarkGithub />
+                    </button>
+                  </a>
+                </Row>
+              </Card>
+              </Col>
+              <Col sm="12" md="6" lg="4">
               <Card body className="project-card">
                 <CardTitle tag="h5">Notes App</CardTitle>
                 <img
