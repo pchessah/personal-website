@@ -14,7 +14,6 @@ import It_Helpdesk from "./assets/IT-Helpdesk.png"
 function Projects() {
     return (
         <div>
-             {/* row 1 */}
           <Row>
           <Col sm="12" md="6" lg="4">
               <Card body className="project-card">
@@ -48,40 +47,43 @@ function Projects() {
                 </Row>
               </Card>
             </Col>
-      
+
+{/* ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */}
+
             <Col sm="12" md="6" lg="4">
-              <Card body className="project-card">
-                <CardTitle tag="h5">Ecommerce site</CardTitle>
+            <Card body className="project-card">
+                <CardTitle tag="h5">Apondo Fish Farm</CardTitle>
                 <img
-                  src={gamecrafters}
-                  alt="game-vrafters"
+                  src={apondoFishApp}
+                  alt="apondo-fish-farm"
                   className="project-img"
                   />
                 <CardText>
-                  A front-end ecommerce site built using react that allows
-                  orders to be submitted via whatsapp. Uses bootstrap and
-                  fontawesome icons
+                 A website made using angular for a fish famr in Nyanza, Kenya
                 </CardText>
                 <Row>
                   <a
-                    href="http://gamecraft.netlify.app"
+                    href="https://apondo-fish-farm.vercel.app/home"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
                     <button className="project-card-btns">Go to project</button>
                   </a>
                   <a
-                    href="https://github.com/pchessah/ecommerce"
+                    href="https://github.com/pchessah/Apondo-fish-farm"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <button className="project-card-btns">
+                    <button disabled className="project-card-btns">
                       View Code <GoMarkGithub />
                     </button>
                   </a>
                 </Row>
               </Card>
-            </Col>
+              </Col>
+
+{/* ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */}
+      
             <Col sm="12" md="6" lg="4">
               <Card body className="project-card">
                 <CardTitle tag="h5">IT Helpdesk System </CardTitle>
@@ -113,75 +115,9 @@ function Projects() {
                 </Row>
               </Card>
             </Col>
-            <Col sm="12" md="6" lg="4">
-              <Card body className="project-card">
-                <CardTitle tag="h5">Fish Cart</CardTitle>
-                <img
-                  src={fishcart}
-                  alt="fish-cart"
-                  className="project-img"
-                  />
-                <CardText>
-                  A react web app that can be used for site for buying and
-                  selling fish feeds, fingerlings. Uses responsive web
-                  technologies such as bootstrap
-                </CardText>
-                <Row>
-                  <a
-                    href="http://fishcart.herokuapp.com/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <button className="project-card-btns">Go to project</button>
-                  </a>
-                  <a
-                    href="https://github.com/pchessah/ecommerce"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <button disabled className="project-card-btns">
-                      View Code <GoMarkGithub />
-                    </button>
-                  </a>
-                </Row>
-              </Card>
-            </Col>
 
-          <br />
-         
-            <Col  sm="12" md="6" lg="4">
-              <Card body className="project-card">
-                <CardTitle tag="h5">Dashboard </CardTitle>
-                <img
-                  src={dashboard}
-                  alt="dashboard"
-                  className="project-img"
-                  />
-                <CardText>
-                  A sample dashboard created using react, chartjs and
-                  react-chart.js The platform is purely frontend.
-                </CardText>
-                <Row>
-                  <a
-                    href="https://chesa-simple-react-dashboard.netlify.app"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <button className="project-card-btns">Go to project</button>
-                  </a>
-                  <a
-                    href="https://github.com/pchessah/dashboard_react"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <button className="project-card-btns">
-                      View Code <GoMarkGithub />
-                    </button>
-                  </a>
-                </Row>
-              </Card>
-            </Col>
-            {/* Here */}
+{/* ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */}
+
             <Col sm="12" md="6" lg="4">
               <Card body className="project-card">
                 <CardTitle tag="h5">Easeria Deliveries </CardTitle>
@@ -215,28 +151,68 @@ function Projects() {
                 </Row>
               </Card>
             </Col>
-       
-            <Col sm="12" md="6" lg="4">
-            <Card body className="project-card">
-                <CardTitle tag="h5">Apondo Fish Farm</CardTitle>
+
+          <br />
+{/* ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */}
+         
+            <Col  sm="12" md="6" lg="4">
+              <Card body className="project-card">
+                <CardTitle tag="h5">Dashboard </CardTitle>
                 <img
-                  src={apondoFishApp}
-                  alt="apondo-fish-farm"
+                  src={dashboard}
+                  alt="dashboard"
                   className="project-img"
                   />
                 <CardText>
-                 A website made using angular for a fish famr in Nyanza, Kenya
+                  A sample dashboard created using react, chartjs and
+                  react-chart.js The platform is purely frontend.
                 </CardText>
                 <Row>
                   <a
-                    href="https://apondo-fish-farm.vercel.app/home"
+                    href="https://chesa-simple-react-dashboard.netlify.app"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
                     <button className="project-card-btns">Go to project</button>
                   </a>
                   <a
-                    href="https://github.com/pchessah/Apondo-fish-farm"
+                    href="https://github.com/pchessah/dashboard_react"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <button className="project-card-btns">
+                      View Code <GoMarkGithub />
+                    </button>
+                  </a>
+                </Row>
+              </Card>
+            </Col>
+   
+{/* ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */}
+
+            <Col sm="12" md="6" lg="4">
+              <Card body className="project-card">
+                <CardTitle tag="h5">Fish Cart</CardTitle>
+                <img
+                  src={fishcart}
+                  alt="fish-cart"
+                  className="project-img"
+                  />
+                <CardText>
+                  A react web app that can be used for site for buying and
+                  selling fish feeds, fingerlings. Uses responsive web
+                  technologies such as bootstrap
+                </CardText>
+                <Row>
+                  <a
+                    href="http://fishcart.herokuapp.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <button className="project-card-btns">Go to project</button>
+                  </a>
+                  <a
+                    href="https://github.com/pchessah/ecommerce"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -246,7 +222,44 @@ function Projects() {
                   </a>
                 </Row>
               </Card>
-              </Col>
+            </Col>
+          
+{/* ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */}
+            <Col sm="12" md="6" lg="4">
+              <Card body className="project-card">
+                <CardTitle tag="h5">Ecommerce site</CardTitle>
+                <img
+                  src={gamecrafters}
+                  alt="game-vrafters"
+                  className="project-img"
+                  />
+                <CardText>
+                  A front-end ecommerce site built using react that allows
+                  orders to be submitted via whatsapp. Uses bootstrap and
+                  fontawesome icons
+                </CardText>
+                <Row>
+                  <a
+                    href="http://gamecraft.netlify.app"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <button className="project-card-btns">Go to project</button>
+                  </a>
+                  <a
+                    href="https://github.com/pchessah/ecommerce"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <button className="project-card-btns">
+                      View Code <GoMarkGithub />
+                    </button>
+                  </a>
+                </Row>
+              </Card>
+            </Col>
+       
+  {/* ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */}
               <Col sm="12" md="6" lg="4">
               <Card body className="project-card">
                 <CardTitle tag="h5">Notes App</CardTitle>
