@@ -9,34 +9,35 @@ import notesApp from "./assets/notes-app.png";
 import dashboard from "./assets/chesa-dashboard.png";
 import fishcart from "./assets/fish-cart.png";
 import apondoFishApp from "./assets/Apondo-fish-farm.png"
+import It_Helpdesk from "./assets/IT-Helpdesk.png"
+
 function Projects() {
     return (
         <div>
              {/* row 1 */}
           <Row>
-            <Col sm="12" md="6" lg="4">
+          <Col sm="12" md="6" lg="4">
               <Card body className="project-card">
-                <CardTitle tag="h5">Easeria Deliveries </CardTitle>
+                <CardTitle tag="h5">Wine store</CardTitle>
                 <img
-                  src={easeria}
-                  alt="easeria-deliveries"
+                  src={wineStore}
+                  alt="wine-store"
                   className="project-img"
                   />
-                  <CardText>
-                    The front-end of a delivery platform made using Mongo Express
-                    React and Node. The appliction implements various aspects of
-                    HTML5 and CSS3.
-                  </CardText>
+                <CardText>
+                  A front-end ecommerce site built using angular and firebase
+                  backend. Can place orders using email and whatsapp
+                </CardText>
                 <Row>
                   <a
-                    href="http://easeria.netlify.app"
+                    href="https://chesa-wine-store.netlify.app/"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
                     <button className="project-card-btns">Go to project</button>
                   </a>
                   <a
-                    href="https://github.com/pchessah/Easeria_deliveries"
+                    href="https://github.com/pchessah/wine-store"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -47,6 +48,7 @@ function Projects() {
                 </Row>
               </Card>
             </Col>
+      
             <Col sm="12" md="6" lg="4">
               <Card body className="project-card">
                 <CardTitle tag="h5">Ecommerce site</CardTitle>
@@ -70,6 +72,37 @@ function Projects() {
                   </a>
                   <a
                     href="https://github.com/pchessah/ecommerce"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <button className="project-card-btns">
+                      View Code <GoMarkGithub />
+                    </button>
+                  </a>
+                </Row>
+              </Card>
+            </Col>
+            <Col sm="12" md="6" lg="4">
+              <Card body className="project-card">
+                <CardTitle tag="h5">IT Helpdesk System </CardTitle>
+                <img
+                  src={It_Helpdesk}
+                  alt="IT Helpdesksystem"
+                  className="project-img"
+                  />
+                  <CardText>
+                  An Ticketing system built using Angular and firebase. Has admin side to check on tickets
+                  </CardText>
+                <Row>
+                  <a
+                    href="https://chesa-ticketing-system.vercel.app/sign-in"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <button className="project-card-btns">Go to project</button>
+                  </a>
+                  <a
+                    href="https://github.com/pchessah/Ticketing-System"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -148,28 +181,30 @@ function Projects() {
                 </Row>
               </Card>
             </Col>
+            {/* Here */}
             <Col sm="12" md="6" lg="4">
               <Card body className="project-card">
-                <CardTitle tag="h5">Wine store</CardTitle>
+                <CardTitle tag="h5">Easeria Deliveries </CardTitle>
                 <img
-                  src={wineStore}
-                  alt="wine-store"
+                  src={easeria}
+                  alt="easeria-deliveries"
                   className="project-img"
                   />
-                <CardText>
-                  A front-end ecommerce site built using angular and firebase
-                  backend. Can place orders using email and whatsapp
-                </CardText>
+                  <CardText>
+                    The front-end of a delivery platform made using Mongo Express
+                    React and Node. The appliction implements various aspects of
+                    HTML5 and CSS3.
+                  </CardText>
                 <Row>
                   <a
-                    href="https://chesa-wine-store.netlify.app/"
+                    href="http://easeria.netlify.app"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
                     <button className="project-card-btns">Go to project</button>
                   </a>
                   <a
-                    href="https://github.com/pchessah/wine-store"
+                    href="https://github.com/pchessah/Easeria_deliveries"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -180,6 +215,7 @@ function Projects() {
                 </Row>
               </Card>
             </Col>
+       
             <Col sm="12" md="6" lg="4">
             <Card body className="project-card">
                 <CardTitle tag="h5">Apondo Fish Farm</CardTitle>
