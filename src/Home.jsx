@@ -116,7 +116,8 @@ function Home() {
                         <li>HTML5, CSS3</li>
                         <li>Version Control using Git and Github</li>
                         <li>Software Best Practices</li>
-                        <li>Website deployment using Heroku</li>
+                        <li>Website management using CPanel</li>
+                        <li>Website deployment using Netlify, Vercel and Heroku</li>
                         <li>Editor experience using VScode and Sublime</li>
                         <li>Debugging using chrome developer tools</li>
                       </ul>
@@ -163,13 +164,13 @@ function Home() {
                       </h5>
                       <h6 className="">
                         <i className="fa fa-calendar fa-fw w3-margin-right"></i>
-                        November 2020 -{' '}
-                        <span
+                        November 2020 - May 2021
+                        {/* <span
                           className="w3-tag w3-round"
                           style={{ backgroundColor: '#1e4e79' }}
                         >
                           Current
-                        </span>
+                        </span> */}
                       </h6>
                       <p>
                         Collaborate with other departments to determine

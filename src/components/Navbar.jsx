@@ -12,7 +12,7 @@ const NavigationBar = () => {
         top: "0",
         width: "100%",
         zIndex: "1",
-        backgroundColor: "#091230",
+        backgroundColor: "#080A30",
         color: "white"
       }}
     >
