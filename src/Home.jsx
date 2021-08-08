@@ -72,7 +72,7 @@ function Home() {
                           style={{ color: '#1e4e79' }}
                           className="fa fa-home fa-fw w3-margin-right w3-large "
                         ></i>
-                        Nairobi, Kenya
+                        Kisumu, Kenya
                       </p>
                       <p>
                         <i
@@ -112,7 +112,7 @@ function Home() {
                         </b>
                       </p>
                       <ul>
-                        <li>JavaScript, Reacct JS, Angular JS, Node JS, shopify</li>
+                        <li>JavaScript, React JS, Angular JS, Node JS, shopify, Wordpress</li>
                         <li>HTML5, CSS3</li>
                         <li>Version Control using Git and Github</li>
                         <li>Software Best Practices</li>
