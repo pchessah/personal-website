@@ -39,18 +39,18 @@ function ContactForm(props) {
         </h6>
          
       </a>
-      <a href="https://www.linkedin.com/in/paul-chesa/">
+      <a href="https://www.linkedin.com/in/paulchesa/">
         <h6>
           <FaLinkedin />
-          <p> @paul-chesa</p>
+          <p> @paulchesa</p>
         </h6>
       </a>
-      <a href="https://twitter.com/pchessah">
-        <h6>
-          <FaTwitter />
-          <p> @pchessah</p>
-        </h6>
-      </a>
+//       <a href="https://twitter.com/pchessah">
+//         <h6>
+//           <FaTwitter />
+//           <p> @pchessah</p>
+//         </h6>
+//       </a>
       <br />
       {/* <form onSubmit={handleSubmit}>
         <input
