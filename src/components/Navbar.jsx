@@ -53,7 +53,7 @@ const NavigationBar = () => {
               </a>
             </Nav.Item>
             <Nav.Item className="nav-item nav-link">
-              <a href="https://www.linkedin.com/in/paul-chesa/" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.linkedin.com/in/paulchesa/" target="_blank" rel="noopener noreferrer">
                 <FaLinkedin style={{ color: "white", marginBottom: "10px" }} />
               </a>
             </Nav.Item>
