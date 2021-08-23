@@ -11,6 +11,7 @@ import fishcart from "./assets/fish-cart.png";
 import apondoFishApp from "./assets/Apondo-fish-farm.png"
 import It_Helpdesk from "./assets/IT-Helpdesk.png"
 import chesa_blog from "./assets/chesa-blog.png"
+import socialmedia from "./assets/social-media.png"
 
 function Projects() {
   return (
@@ -295,6 +296,41 @@ function Projects() {
             </Row>
           </Card>
         </Col>
+
+           {/* ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */}
+           <Col sm="12" md="6" lg="4">
+          <Card body className="project-card">
+            <CardTitle tag="h5">Next JS Social application</CardTitle>
+            <img
+              src={socialmedia}
+              alt="social-media-project"
+              className="project-img"
+            />
+            <CardText>
+              A front-end ecommerce site built using Next JS that allows
+              users to post and comment on other user's posts. Backend is on firebase.
+            </CardText>
+            <Row>
+              <a
+                href="https://chesa-socialmedia.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <button className="project-card-btns">Go to project</button>
+              </a>
+              <a
+                href="https://github.com/pchessah/chesa-socialmedia-app"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <button className="project-card-btns">
+                  View Code <GoMarkGithub />
+                </button>
+              </a>
+            </Row>
+          </Card>
+        </Col>
+
 
         {/* ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */}
         <Col sm="12" md="6" lg="4">
