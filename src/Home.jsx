@@ -112,7 +112,7 @@ function Home() {
                         </b>
                       </p>
                       <ul>
-                        <li>JavaScript, React JS, Angular JS, Node JS, shopify, Wordpress</li>
+                        <li>JavaScript, React JS, Angular JS, Next JS,  Node JS, shopify, Wordpress</li>
                         <li>HTML5, CSS3</li>
                         <li>Version Control using Git and Github</li>
                         <li>Software Best Practices</li>

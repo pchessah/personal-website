@@ -45,12 +45,12 @@ function ContactForm(props) {
           <p> @paulchesa</p>
         </h6>
       </a>
-//       <a href="https://twitter.com/pchessah">
-//         <h6>
-//           <FaTwitter />
-//           <p> @pchessah</p>
-//         </h6>
-//       </a>
+      <a href="https://twitter.com/pchessah">
+         <h6>
+           <FaTwitter />
+          <p> @pchessah</p>
+        </h6>
+      </a>
       <br />
       {/* <form onSubmit={handleSubmit}>
         <input
