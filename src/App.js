@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import NavigationBar from "./components/Navbar.jsx";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Home from "./Home.jsx";
+import Home from "./pages/Home.jsx";
 
 class App extends Component {
   render() {

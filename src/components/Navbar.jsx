@@ -2,6 +2,7 @@ import React from "react";
 import { Nav, Navbar } from "react-bootstrap";
 import { FaLinkedin } from "react-icons/fa";
 import { GoMarkGithub } from "react-icons/go";
+import { AiFillMediumCircle } from "react-icons/ai";
 
 const NavigationBar = () => {
   return (
@@ -60,6 +61,13 @@ const NavigationBar = () => {
             <Nav.Item className="nav-item nav-link">
               <a href="https://github.com/pchessah" target="_blank" rel="noopener noreferrer">
                 <GoMarkGithub
+                  style={{ color: "white", marginBottom: "10px" }}
+                />
+              </a>
+            </Nav.Item>
+            <Nav.Item className="nav-item nav-link">
+              <a href="https://medium.com/@paul-chesa" target="_blank" rel="noopener noreferrer">
+                <AiFillMediumCircle
                   style={{ color: "white", marginBottom: "10px" }}
                 />
               </a>
