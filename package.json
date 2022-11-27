@@ -13,6 +13,7 @@
     "@types/node": "^18.11.9",
     "@types/react": "^18.0.25",
     "@types/react-dom": "^18.0.9",
+    "autoprefixer": "10.4.5",
     "bootstrap": "^4.5.3",
     "emailjs-com": "^2.6.4",
     "react": "^16.14.0",
@@ -45,5 +46,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "overrides": {
+    "autoprefixer": "10.4.5"
   }
 }
