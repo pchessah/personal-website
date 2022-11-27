@@ -2,7 +2,7 @@ import React from 'react'
 import { FaLinkedin, FaTwitter, FaWhatsapp } from 'react-icons/fa'
 import { SiGmail } from 'react-icons/si'
 
-function ContactForm(props) {
+function ContactForm(props: any) {
 //   const [name, setName] = useState('')
 //   const [subject, setSubject] = useState('')
 //   const [message, setMessage] = useState('')

@@ -1,8 +1,8 @@
 import React, { Component } from "react";
-import NavigationBar from "./components/Navbar.jsx";
+import NavigationBar from "./components/Navbar";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Home from "./pages/Home.jsx";
+import Home from "./pages/Home";
 
 class App extends Component {
   render() {

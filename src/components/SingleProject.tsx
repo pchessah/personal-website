@@ -8,7 +8,7 @@ import { Card } from 'react-bootstrap';
  * @param props Project image url, title, description,liveUrl and githib link
  */
 
-function SingleProjects(props) {
+function SingleProjects(props:any) {
   return (
     <div>
     
