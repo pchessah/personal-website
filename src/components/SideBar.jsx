@@ -7,7 +7,7 @@ function SideBar(){
     <div className="w3-white w3-text-grey w3-card-4">
     <div className="w3-display-container">
       <img
-        src="https://avatars2.githubusercontent.com/u/20629353?s=460&v=4"
+        src="https://media-exp1.licdn.com/dms/image/C4D03AQEwJmie-xk9QA/profile-displayphoto-shrink_800_800/0/1668019248193?e=1675296000&v=beta&t=tdofxMmwmZ70IF_2ytlUWKPfbb-JDeBXmXcFB8qjrwo"
         style={{ width: '100%' }}
         alt="Avatar"
       />

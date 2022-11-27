@@ -21,7 +21,7 @@ const NavigationBar = () => {
         <Navbar.Brand>
           <a className="page-links" href="#profile">
             <img
-              src="https://avatars2.githubusercontent.com/u/20629353?s=460&v=4"
+              src="https://media-exp1.licdn.com/dms/image/C4D03AQEwJmie-xk9QA/profile-displayphoto-shrink_200_200/0/1668019248193?e=1675296000&v=beta&t=jMUzKJzVudrRmhvVQroaC23-pC8cPi7RHHzWyXx9sFE"
               alt="Avatar"
               style={{height:"75px", width: "75px", borderRadius:"100px"}}
             />
