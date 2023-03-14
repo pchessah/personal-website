@@ -3,13 +3,14 @@ import { Row, Col } from 'reactstrap'
 import SingleProjects from './SingleProject';
 import wineStore from "../assets/wine-store.png";
 import dashboard from "../assets/chesa-dashboard.png";
-import fishcart from "../assets/fish-cart.png";
+
 import apondoFishApp from "../assets/Apondo-fish-farm.png"
 import It_Helpdesk from "../assets/IT-Helpdesk.png"
 import chesa_blog from "../assets/chesa-blog.png"
 import socialmedia from "../assets/social-media.png"
 import mitchelle_portfolio from "../assets/mitchelle-portfolio.png"
 import flient_technologies from "../assets/flient-technologies.png"
+import mbaoZetu from "../assets/mbao-zetu.png";
 
 /**
  * @Description Component to hold all projects that I have done
@@ -24,6 +25,20 @@ function Projects() {
         </div>
       <div>
       <Row>
+     {/* ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */}
+
+        <Col sm="12" md="6" lg="4">
+          <SingleProjects
+            projectTitle="Mbao Zetu"
+            imageUrl={mbaoZetu}
+            projectDescription=" A furniture ecommerce application part of nx mono repo built using angular"
+            projectLink="https://mbao-zetu.web.app/"
+            gitHubLink="https://github.com/pchessah/cows-will-fly"
+          />
+
+        </Col>
+
+        {/* ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */}
         <Col sm="12" md="6" lg="4">
           <SingleProjects
             projectTitle="IT Helpdesk System"
@@ -89,18 +104,8 @@ function Projects() {
 
         {/* ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */}
 
-        <Col sm="12" md="6" lg="4">
+       
 
-          <SingleProjects
-            projectTitle="Fish Kart"
-            imageUrl={fishcart}
-            projectDescription="   A react web app that can be used for site for buying and
-            selling fish feeds, fingerlings. Uses responsive web
-            technologies such as bootstrap."
-            projectLink="http://fishcart.herokuapp.com/"
-            gitHubLink="https://github.com/pchessah/ecommerce"
-          />
-        </Col>
 
         {/* ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */}
 
