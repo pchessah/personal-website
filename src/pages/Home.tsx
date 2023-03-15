@@ -10,8 +10,10 @@ function Home() {
     <div>
       <div id="homePage">
         <section>
+          <span className='title'>
           Paul Chesa, <br />
           Software Engineer
+          </span>
           <div className="arrow">
             <span></span>
             <span></span>

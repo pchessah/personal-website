@@ -54,10 +54,20 @@ nav-item a:hover {
   font-family: 'Comic Neue', cursive;
   color: white !important;
   font-size: 40px;
+  padding: 50px;
+  margin-right: -350px;
  }
 
 #homePage h1 {
   color:white;
+}
+
+.title{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 #homePage img {
