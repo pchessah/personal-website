@@ -1,7 +1,8 @@
-import { GoMarkGithub } from 'react-icons/go'
-import { FaLinkedin } from 'react-icons/fa'
+import  React                 from 'react';
+import { GoMarkGithub }       from 'react-icons/go'
+import { FaLinkedin }         from 'react-icons/fa'
 import { AiFillMediumCircle } from "react-icons/ai";
-import React from 'react';
+import   myPic                from "../assets/my-pic.jpeg";
 
 function SideBar() {
   return (
@@ -9,7 +10,7 @@ function SideBar() {
       <div className="w3-white w3-text-grey w3-card-4">
         <div className="w3-display-container">
           <img
-            src="https://media-exp1.licdn.com/dms/image/C4D03AQEwJmie-xk9QA/profile-displayphoto-shrink_800_800/0/1668019248193?e=1675296000&v=beta&t=tdofxMmwmZ70IF_2ytlUWKPfbb-JDeBXmXcFB8qjrwo"
+            src={myPic}
             style={{ width: '100%' }}
             alt="Avatar"
           />

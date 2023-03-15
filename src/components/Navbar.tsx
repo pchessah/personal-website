@@ -3,6 +3,7 @@ import { Nav, Navbar } from "react-bootstrap";
 import { FaLinkedin } from "react-icons/fa";
 import { GoMarkGithub } from "react-icons/go";
 import { AiFillMediumCircle } from "react-icons/ai";
+import   myPic from "../assets/my-pic.jpeg";
 
 const NavigationBar = () => {
   return (
@@ -21,7 +22,7 @@ const NavigationBar = () => {
         <Navbar.Brand>
           <a className="page-links" href="#profile">
             <img
-              src="https://media.licdn.com/dms/image/C4D03AQEwJmie-xk9QA/profile-displayphoto-shrink_400_400/0/1668019248193?e=1684368000&v=beta&t=wF-4RNtbUPG4GcIi2Xn6VJMdu8pzouaAC03h-wf3HrI"
+              src={myPic}
               alt="Avatar"
               style={{height:"75px", width: "75px", borderRadius:"100px"}}
             />
