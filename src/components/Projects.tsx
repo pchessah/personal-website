@@ -44,7 +44,7 @@ function Projects() {
             projectTitle="IT Helpdesk System"
             imageUrl={It_Helpdesk}
             projectDescription="  A Ticketing system built using Angular and firebase. Has admin side to check on tickets that have been submitted by the users. The admin can proceed to change the status of a ticket."
-            projectLink="https://chesa-ticketing-system.vercel.app/sign-in"
+            projectLink="https://ticketing-system-321f4.web.app/"
             gitHubLink="https://github.com/pchessah/Ticketing-System"
           />
 
